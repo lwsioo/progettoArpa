@@ -1,8 +1,8 @@
 # 🦊 Fauna in Città
 
-![GitHub repo size](https://img.shields.io/github/repo-size/MrErmita/progettoArpa?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/MrErmita/progettoArpa?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/MrErmita/progettoArpa?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/lwsioo/progettoArpa?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/lwsioo/progettoArpa?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/lwsioo/progettoArpa?style=for-the-badge)
 
 Un progetto sviluppato per **ARPA Umbria** con l'obiettivo di sensibilizzare la cittadinanza sulla presenza e la tutela della fauna selvatica in ambienti urbani. 🏙️🌿
 
@@ -40,4 +40,5 @@ Questo progetto è distribuito sotto licenza MIT. 📄
 ---
 
 💡 **Star il repository se ti è piaciuto! ⭐**
+
 
