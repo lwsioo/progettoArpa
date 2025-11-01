@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetto Arpa | Eventi</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="eventi.html">Eventi</a>
+              </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="img-sfondo-progetto">
+    <img src="res/foglie/foglie_angolo_sx.png" alt="foglieSfondo" class="foglie imgSfondoProgetto" />
+  </div>
+  <div class="img-sfondo-home">
+    <img src="res/foglie/foglie_vert2.png" alt="foglieSfondo" class="foglie imgSfondoHome" />
+  </div>
+
+  <main class="pb-5">
+
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+        <div class="titoliPagine glass">
+          <div class="h2">Eventi</div>
+        </div>
+    </div>
+
+
+    <!-- INIZIO EVENTO 1 -->  
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+      <div class="accordion" id="accordionExample2" style="border-radius: 16px !important;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" id="firstAccordionItem"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+              27-11-2023: Il nuovo progetto di Arpa Umbria
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              <div class="eventContainer">
+                <div class="eventText">
+                  <div class="h4 eventTitle">
+                    Il nuovo progetto di Arpa Umbria
+                  </div>
+                  <div class="eventBody">
+                      <i>Fauna selvatica in città: conoscerla per rispettarla</i> è il nuovo progetto di Arpa Umbria, sostenuto dalla Fondazione Perugia.<br> Il convegno ha messo a confronto idee, proposte e necessità sia in campo ambientale che sociale. La sfida è individuare le buone pratiche sociali e imparare a comunicarle alla cittadinanza. <br><i><b>La tutela del territorio passa per la cultura e la condivisione.</b></i>
+                  </div>
+                </div>
+                <div class="eventImage">
+                    <!--<img src="res/locandineEventi/locandina_27112023.pdf" class="img-fluid rounded" alt="Placeholder"/>-->
+                    <img src="res/locandineEventi/locandina_27112023.png" class="img-fluid rounded" alt="Placeholder" />
+                </div>
+              </div>
+                <div class="download mt-3">
+                <button type="button" class="download-button" onclick="download('res/locandineEventi/locandina_27112023.pdf')">
+                  <span class="download-button__text">Download</span>
+                  <span class="download-button__icon">
+                    <svg class="download-svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                      <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                      <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INIZIO EVENTO 2 -->  
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+              13-09-2024: Attraverso il fumetto, la scienza diventa accessibile a tutti
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              <div class="eventContainer">
+                <div class="eventText">
+                  <div class="h4 eventTitle">
+                    Attraverso il fumetto, la scienza diventa accessibile a tutti
+                  </div>
+                  <div class="eventBody">
+                    Nell’ambito della manifestazione <i>Cortile di Francesco 2024-CorporalMente</i> organizzata dai frati del Sacro Convento di Assisi, a margine dell’incontro “Proprio con tutti!-Il Cantico delle creature di san Francesco accessibile per persone con ASD”, Rosalba Padula, biologa di Arpa Umbria e responsabile tecnico-scientifico del progetto, ha presentato il progetto e il fumetto per ipovedenti e non vedenti realizzato con la collaborazione degli studenti e dell’Unione Italiana Ciechi di Perugia. <br> L’arte visiva e narrativa del fumetto è stata utilizzata per condividere con tutti un’importante problematica ambientale: <b>imparare a relazionarsi con la fauna selvatica presente negli ambienti urbani e periurbani. </b>
+                  </div>
+                </div>
+                <div class="eventImage">
+                  <img src="res/locandineEventi/2-02.jpg" class="img-fluid rounded" alt="Placeholder"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INIZIO EVENTO 3 --> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+              01-10-2024: Fauna selvatica in città
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              <div class="eventContainer">
+                <div class="eventText">
+                  <div class="h4 eventTitle">
+                    Fauna selvatica in città
+                  </div>
+                  <div class="eventBody">
+                    L’<i>Università degli Studi di Perugia - Dipartimento di Medicina Veterinaria</i> e <i>Arpa Umbria</i> hanno organizzato un evento dedicato agli studenti del terzo anno. <br>Il progetto “<b>Fauna selvatica in città: conoscerla per rispettarla</b>” diviene l’incipit per affrontare insieme a tecnici e professionisti, le diverse modalità di approccio al problema ambientale, sociale e sanitario.<br> Una fattiva dimostrazione di come la collaborazione tra istituzioni conduce al miglioramento della conoscenza.
+                  </div>
+                </div>
+                <div class="eventImage">
+                    <!--<img src="res/locandineEventi/locandina_01102024.pdf" class="img-fluid rounded" alt="Placeholder"/>-->
+                    <img src="res/locandineEventi/locandina_01102024.png" class="img-fluid rounded" alt="Placeholder" />
+                </div>
+              </div>
+                <div class="download mt-3">
+                <button type="button" class="download-button" onclick="download('res/locandineEventi/locandina_01102024.pdf')">
+                  <span class="download-button__text">Download</span>
+                  <span class="download-button__icon">
+                    <svg class="download-svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                      <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                      <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <!-- INIZIO EVENTO 4 --> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" id="lastAccordionItem" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
+              08-10-2024: Fauna selvatica in città: conoscerla per rispettarla
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              <div class="eventContainer">
+                <div class="eventText">
+                  <div class="h4 eventTitle">
+                    Fauna selvatica in città: conoscerla per rispettarla
+                  </div>
+                  <div class="eventBody">
+                    <i>Arpa Umbria</i> organizza l’evento di chiusura del progetto che ha visto protagonisti studenti, insegnanti, tecnici-professionisti, associazioni, privati e amministrazioni pubbliche. <br>Un team numeroso ed eterogeneo che ha accompagnato con professionalità, competenza e impegno la crescita culturale della nostra società civile, ponendo un forte accento sul tema dell’<i><b>inclusione</b></i> e <i><b>condivisione</b></i> della scienza a tutti i livelli. <br>L’incontro ha permesso non solo di tirare le somme delle attività svolte ma è soprattutto diventato un momento di concreta apertura per nuove prospettive, potenzialità di cambiamento e visioni future. 
+                  </div>
+                </div>
+                <div class="eventImage">
+                    <!--<img src="res/locandineEventi/locandina_08102024.pdf" class="img-fluid rounded" alt="Placeholder"/>-->
+                    <img src="res/locandineEventi/locandina_08102024_1.png" class="img-fluid rounded" alt="Placeholder" />
+                </div>
+              </div>
+                <div class="download mt-3">
+                <button type="button" class="download-button" onclick="download('res/locandineEventi/locandina_08102024.pdf')">
+                  <span class="download-button__text">Download</span>
+                  <span class="download-button__icon">
+                    <svg class="download-svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                      <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                      <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.accordion', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+</body>
+
+</html>

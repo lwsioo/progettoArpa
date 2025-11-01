@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Aree Blu</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myModal" class="modal-panel">
+      <span class="close-panel" onclick="closeImg()">&times;</span>
+      <img class="modal-content-panel" id="img01">
+    </div>
+
+    <div class="container mt-5">
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-blu">
+          <div class="h2">Aree Blu</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <div class="text-center">
+                <p>Le aree blu si riferiscono principalmente agli ambienti acquatici quali i laghetti, le fontane, gli
+                  stagni e i tratti fluviali. Anche queste aree svolgono un ruolo fondamentale nella salvaguardia del
+                  benessere fisico e mentale dei cittadini. Nell’ambito del progetto il Comune di Assisi e il Comune di
+                  Perugia hanno individuato specifiche zone di interesse, particolarmente frequentate dai cittadini, in
+                  cui il rapporto con gli animali selvatici diventa significativo ed è quindi rilevante individuare
+                  attraverso la formazione e l’educazione, le giuste buone pratiche.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+
+      <h3 class="text-left mt-5 mb-4 text-dark glass" style="width: fit-content !important;">Comune di Perugia:</h3>
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-blu">
+          <div>Il Laghetto di Pian di Massiano</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Il laghetto, riqualificato nel 2020, accoglie oltre agli anatidi di più specie, all’avifauna locale e a
+                una piccola colonia di nutrie, anche pesci (carpe) e tartarughe. È alimentato da un immissario che
+                raccoglie le acque piovane e da un sistema di integrazione che attinge a un pozzo limitrofo per
+                sopperire alle carenze idriche estive. Il Comune da diversi anni ha attivato una convenzione con la LAV
+                (lega anti vivisezione sezione Perugia) per la somministrazione del cibo agli animali presenti (negli
+                orari mattutini e pomeridiani). Un veterinario, individuato dal Comune di Perugia, provvede alla
+                determinazione della dieta alimentare, al censimento dell’avifauna acquatica, al controllo delle nascite
+                ed al monitoraggio dello stato sanitario degli animali.</p>
+              <img src="res/pannelli/pianDiMassianoBlu.png" class="imgResizing img-fluid" alt="Immagine del laghetto"
+                usemap="#map3">
+              <map name="map3" id="#map3" class="map3">
+                <area shape="circle" coords="300,250,80" href="animali.html?item=ThirtyFour">
+                <area shape="circle" coords="640,220,80" href="animali.html?item=One">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675.1875420618333!2d12.355097485467017!3d43.1104295157066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ea0b02f31e857%3A0x66d2b7c324e503b9!2sLago%20dello%20Stadio!5e1!3m2!1sit!2sit!4v1718268774326!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-blu">
+          <div>Il Bosco Didattico di Ponte Felcino</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>E’ un’area naturalistico-ambientale di circa 4 ettari di proprietà comunale. La sua nascita, avvenuta
+                nella seconda metà degli anni 90, si deve alla volontà del territorio di scopo di promuovere concetti
+                naturalistici ed ecologici in generale e in particolare legati a piante e foreste e la conoscenza e la
+                valorizzazione dell’ambiente vegetale. Sono presenti oltre 1.000 specie botaniche arboree, arbustive ed
+                erbacee, una serra dedicata alle piante succulente (piante grasse), una agli agrumi, una grande serra a
+                cupola con piante tropicali e un'altra con piante degli ambienti subtropicali, un roseto, un bosco
+                planiziale e un bosco ripariale. Il Bosco Didattico quindi può essere letto da molteplici punti di
+                vista: studio sulle caratteristiche delle piante, studio sulle utilità delle piante nelle varie attività
+                umane (alimentazione e industria) e sulla loro funzione insostituibile nella vita del pianeta e nel
+                ciclo della vita, studio delle tecniche colturali, studio di ogni essenza vegetale nelle sue
+                caratteristiche ornamentali e decorative da impiegare nei giardini, nel verde attrezzato, nelle opere
+                pubbliche e di come la vegetazione possa inserirsi nel contesto urbano, nei boschi, ecc. Legato
+                intimamente al Bosco Didattico è il canale di adduzione di acqua da Villa Pitignano alla ex-Centrale
+                idroelettrica di Ponte Felcino. Le sponde sono state opportunamente riambientate con vegetazione
+                ripariale e il ripopolamento del canale è stato completato dall’immissione di pesci e di animali
+                acquatici che oggi animano il suo corso. Il Bosco didattico sarà oggetto di intervento in numerosi
+                settori di esso a valere sui fondi PNRR, tra cui la realizzazione di una nuova serra subtropicale
+                riprendendo la struttura di protezione utilizzata per il restauro della Fontana Maggiore di Piazza 4
+                Novembre; il rifacimento totale della serra subtropicale esistente e la realizzazione di una nuova area
+                dedicata agli animali garantendo la convivenza e le necessità di ognuno di essi.</p>
+              <img src="res/pannelli/ponteFelcinoBlu.png" class="imgResizing img-fluid" alt="Immagine del bosco"
+                usemap="#map2">
+              <map name="map2" id="#map2" class="map2">
+                <area shape="circle" coords="190,180,80" href="animali.html?item=Ten">
+                <area shape="circle" coords="480,130,80" href="animali.html?item=TwentyOne">
+                <area shape="circle" coords="640,260,80" href="animali.html?item=Eighteen">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7339.562969765735!2d12.445478!3d43.134723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132c20247e9ff4ed%3A0xefa424a90f27effb!2sBosco%20didattico%20Ponte%20Felcino!5e1!3m2!1sit!2sit!4v1718268941482!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-blu">
+          Area Parco Valleceppi (Ponte Valleceppi)
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Geograficamente situato a est del territorio di Perugia, a 200 m s.l.m., Ponte Valleceppi (Ponfalceppo)
+                è una frazione di Perugia di circa 3.000 abitanti. Il territorio è pianeggiante e in minima parte
+                collinare. Il simbolo della città è il ponte, passaggio esistente già in origine romana, che la collega
+                a Perugia e che attraversa il fiume Tevere lungo il quale si sono sviluppati numerosi mulini. Lungo il
+                Tevere è posto il parco comunale realizzato con il contributo di associazioni di volontari e degli Enti
+                territoriali. In passato il Parco è stato oggetto di adeguamenti strutturali e ad oggi Il Parco di Ponte
+                Valleceppi e il Bosco Didattico di Ponte Felcino sono inseriti in progetti a valere sui fondi del PNRR
+                per circa 10 milioni di € sul Percorso ciclo-pedonale del Tevere. L’area è stata prescelta come
+                interessante per il progetto sulla fauna in quanto limitrofa al corso del Fiume Tevere ed inoltre perché
+                sarà resa accessibile a tutti grazie ai miglioramenti mirati ad eliminare le barriere architettoniche.
+                In particolare è previsto il rifacimento della sentieristica interna che sarà resa facilmente
+                percorribile anche da persone con difficoltà motorie e l’integrazione dei giochi per bambini presenti
+                con attrezzature inclusive.</p>
+              <img src="res/pannelli/ponteValleceppiBlu.png" class="imgResizing img-fluid" alt="pianDiMassianoVerde"
+                usemap="#map1">
+              <map name="map1" id="#map1" class="map1">
+                <area shape="circle" coords="185,130,70" href="animali.html?item=Ten">
+                <area shape="circle" coords="455,100,50" href="animali.html?item=Nine">
+                <area shape="circle" coords="700,130,50" href="animali.html?item=FourtyOne">
+                <area shape="circle" coords="280,300,50" href="animali.html?item=Eighteen">
+                <area shape="circle" coords="650,300,60" href="animali.html?item=FourtyTwo">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7342.343812534921!2d12.444197!3d43.111548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132c20074c7e6013%3A0x98f5e95b3c53bccb!2sParco%20Comunale%20Ponte%20Valleceppi%2C%2006135%20Perugia%20PG!5e1!3m2!1sit!2sit!4v1718268994986!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-left mt-5 mb-4 text-dark glass" style="width: fit-content;">Comune di Assisi:</h3>
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-blu">
+          Ponte fiume Chiascio – Percorso verde (Petrignano)
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Il percorso naturalistico lungo le rive del fiume Chiascio si sviluppa dalla frazione di Torchiagina,
+                passa sotto l’antico borgo di Sterpeto e arriva al centro del paese di Petrignano. È un lembo naturale
+                ben conservato e di notevole valore paesaggistico e naturalistico. Nelle acque del fiume sono
+                sicuramente presenti ciprinidi quali barbi, carpe e tinche, oltre all’avifauna. Lungo le sponde e nelle
+                zone di scoglio affioranti o ancora, sulle piccole spiagge di ciottoli e sabbia presenti nelle anse
+                fluviali, si riconoscono alcuni uccelli sedentari, altri migratori: l’airone cinerino, germani reali,
+                alzavole, limicoli e martin pescatore.</p>
+              <img src="res/pannelli/petrignanoBlu.png" class="imgResizing img-fluid" alt="Immagine del percorso verde"
+                usemap="#map4">
+              <map name="map4" id="#map4" class="map4">
+                <area shape="circle" coords="280,190,80" href="animali.html?item=Seventeen">
+                <area shape="circle" coords="700,220,50" href="animali.html?item=Six">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d234999.5098574123!2d12.524108!3d43.099953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9dc6d3aa754d%3A0xa6c9cc8956230b0b!2sFiume%20Chiascio!5e1!3m2!1sit!2sit!4v1718447800637!5m2!1sit!2sit"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+  <script src="translate.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+
+  <script>
+    window.onload = function () {
+      $('map').imageMapResize(); // Adatta tutte le mappe immagine presenti
+    };
+  </script>
+
+  <script>
+    function getImgs() {
+      const imgs = document.getElementsByClassName('imgResizing');
+
+      for (let i = 0; i < imgs.length; i++) {
+        calcCords(imgs[i], i);
+      }
+    }
+
+    function calcCords(img, i) {
+      let imgResized = img.width / img.naturalWidth;
+
+
+      let mapId = img.useMap;
+
+      let map = document.getElementById(mapId);
+
+      let areas = map.getElementsByTagName('area');
+
+      for (let j = 0; j < areas.length; j++) {
+        let coords = areas[j].getAttribute("coords");
+
+        coords = coords.split(",");
+        coords[0] = Math.round(coords[0] * imgResized);
+        coords[1] = Math.round(coords[1] * imgResized);
+        coords[2] = Math.round(coords[2] * imgResized);
+
+        areas[j].setAttribute("coords", coords[0] + "," + coords[1] + "," + coords[2]);
+      }
+
+
+
+    }
+    window.onload = getImgs();
+  </script>
+</body>
+
+</html>

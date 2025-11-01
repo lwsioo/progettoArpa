@@ -1,0 +1,2018 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Animali Selvatici</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="img-sfondo-progetto">
+    <img src="res/foglie/foglie_angolo_sx.png" alt="foglieSfondo" class="foglie imgSfondoProgetto" />
+  </div>
+  <div class="img-sfondo-home">
+    <img src="res/foglie/foglie_vert1.png" alt="foglieSfondo" class="foglie imgSfondoHome" />
+  </div>
+
+  <main class="pb-1">
+
+    <div class="container mt-5 col-lg-8">
+      <div class="card mb-4 glass">
+        <div class="card-header titoliPagine">
+          <div class="h2">Animali</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <div class="text-center">
+                La lista degli animali selvatici che vivono nelle aree urbanizzate è sicuramente molto lunga e
+                può dipendere da diversi fattori: la localizzazione delle aree verdi e blu; la presenza di specie
+                vegetali;
+                la
+                quantità, ampiezza e qualità delle acque; la gestione e cura dei diversi ambienti; la frequentazione e
+                utilizzo finale dell’area. Di seguito una prima lista di animali che è possibile incontrare nelle aree
+                verdi
+                e blu
+                oggetto del progetto.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-lg-6 offset-lg-3">
+      <div class="accordion" id="accordionExample" style="border-radius: 16px !important;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" id="firstAccordionItem"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+              <img src="res/fotoAnimali/airone_cenerino.jpg" class="img-fluid" alt="airone_cenerino">
+              Airone cenerino
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/airone_cenerino.jpg" class="img-fluid" alt="airone_cenerino">
+            <div class="accordion-body accordion-glass text-dark">
+
+              <h6 class="sub card-subtitle mb-2 text-muted">Ardea cinerea Linnaeus, 1758</h6> L’Airone cenerino è un
+              grande uccello che da adulto può raggiungere il metro d’altezza. E’ il più grande
+              degli aironi
+              europei. Le sue piume sono grigie nella parte superiore e bianche in quella inferiore. Le zampe e il becco
+              gialli. Un
+              evidente ciuffo di piume nere parte dalla sommità posteriore e superiore dell&#39;occhio e prosegue fino
+              sul
+              collo.
+              Si nutre principalmente di pesci, ma può anche cacciare anfibi, insetti, crostacei, molluschi, e
+              occasionalmente
+              piccoli rettili e piccoli mammiferi. La tecnica di caccia consiste nel rimanere immobile, con le lunghe
+              zampe
+              immerse nell&#39;acqua finché, che con uno scatto improvviso, la preda viene infilzata con il becco
+              appuntito e
+              inghiottita in un sol boccone. È attivo sia di giorno che di notte, e per nutrirsi si sposta anche di
+              decine
+              di chilometri
+              dal luogo di nidificazione.
+              Il nido è normalmente una piattaforma di rami costruita nella parte alta degli alberi, anche se
+              occasionalmente può
+              essere costruito in un canneto o sul terreno. Le uova sono 4-5 per nido. Raggiunta l&#39;età adulta
+              possono
+              superare i 20
+              anni di vita. Nidifica in garzaie realizzate in luoghi protetti, alberati e generalmente vicini
+              all&#39;acqua; frequenta prati
+              umidi e torrenti anche nei pressi di centri urbani e abitati, segno di un forte adattamento della specie
+              in
+              zone vicine
+              all&#39;uomo come boschi di pianura di alto fusto, pioppeti coltivati, alberate in prossimità di zone
+              umide
+              e corsi d&#39;acqua.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed accordion-glass text-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+              <img src="res/fotoAnimali/allocco.jpg" class="img-fluid" alt="">
+              Allocco
+            </button>
+          </h2>
+
+
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+
+            <img src="res/fotoAnimali/allocco.jpg" class="img-fluid" alt="">
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Strix aluco Linnaeus, 1758</h6> <!-- Allocco -->
+              L’Allocco è un rapace notturno tipico abitante dei boschi che da alcuni anni si è però ben ambientato in
+              alcuni parchi
+              del comune di Assisi. Durante il giorno riposa tra la fitta chioma dei grandi alberi dove si mimetizza
+              vicino al
+              tronco. Generalmente si lega al partner per tutta la vita. Per riprodursi utilizza cavità di alberi, case
+              disabitate e
+              all’occorrenza cassette nido, oppure anche i nidi abbandonati da altri uccelli e perfino tane di
+              mammiferi.
+              L’Allocco
+              riesce a girare la testa fino a 270° grazie all’apparato scheletrico e muscolare di cranio e collo. I
+              maschi
+              segnalano e
+              difendono il proprio territorio con il tipico richiamo che ha tonalità differenti da individuo a
+              individuo:
+              il canto varia
+              e diventa più aggressivo se l’intruso non è un vicino già conosciuto, ma piuttosto un contendente ritenuto
+              quindi più
+              pericoloso.
+              E’ dotato di becco adunco e forti artigli con i quali cattura mammiferi di piccole e medie dimensioni,
+              come
+              scoiattoli, ghiri e donnole, piccoli anfibi e varie specie di uccelli, non disdegnando anche scarafaggi e
+              grossi bruchi.
+              Grazie allo sviluppatissimo senso dell’udito ed al volo estremamente silenzioso, fondamentali per la
+              caccia
+              notturna,
+              individua e ghermisce a sorpresa le prede che si accorgono dell’attacco solo quando per loro è ormai
+              troppo
+              tardi. Le
+              prede vengono inghiottite intere e le parti indigeribili come ossa, pelo ed esoscheletri di insetti,
+              vengono
+              poi espulsi
+              dal becco sotto forma di piccoli ammassi chiamati borre.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+              <img src="res/fotoAnimali/anatra.jpg" class="img-fluid" alt="">
+              Anatra
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/anatra.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Anas spp.</h6>
+              Anas è un genere di uccelli che comprende almeno una trentina di specie in tutto il mondo. Sono
+              generalmente
+              caratterizzate da un becco largo, appiattito; 4 dita interamente palmate tre delle quali rivolte in
+              avanti;
+              un accentuato
+              dimorfismo sessuale e un piumaggio variamente colorato. Acquatiche, nuotano, si tuffano e si sommergono.
+              Molto
+              comuni in tutte le aree blu urbane e periurbane del continente europeo. Da sempre (se ne ha testimonianza
+              in
+              numerosi testi latini) hanno raggiunto un livello di addomesticamento e confidenza con l’uomo molto
+              elevato.
+              Forse
+              la specie più nota è l’anatra selvatica o germano reale.
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
+              <img src="res/fotoAnimali/ape.jpg" class="img-fluid" alt="">
+              Ape
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/ape.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Apis mellifera ligustica Spinola, 1806</h6>
+              Tra i più conosciuti insetti impollinatori, le api svolgono un ruolo cruciale anche negli ecosistemi
+              urbani.
+              Minacciate
+              da pesticidi, perdita di habitat, monocolture, parassiti, malattie e cambiamenti climatici, le api sono in
+              serio declino.
+              La moria delle api costituisce un problema sempre più grave e per questo oltre a promuovere progetti di
+              ricerca e
+              monitorarne lo stato di salute, è necessario che tutti i cittadini imparino a comprenderne l’importanza e
+              a
+              tutelarne
+              l’esistenza. Ciò che possiamo fare nel nostro piccolo, è cercare di non ucciderle, e se ci imbattiamo in
+              qualche
+              alveare segnalarlo alle autorità competenti, che provvederanno a rimuoverlo in sicurezza.
+              L’"Apis mellifera" nota anche come ape domestica o ape europea, è la specie di ape più comune in Italia. E’
+              un insetto
+              sociale, vive cioè in gruppi ma ogni individuo ha compiti diversi. Le api tendono a non pungere gli esseri
+              umani se
+              non espressamente attaccate e il loro veleno è solitamente innocuo.
+              Con l’arrivo dell’estate aumentano le probabilità di imbatterci in api, vespe, calabroni e simili che
+              ronzano attorno
+              agli avanzi del nostro cibo o corteggiano le aiole fiorite di parchi e giardini. E’ quindi indispensabile
+              saperli
+              riconoscere per capire quando sia o meno il caso di allontanarci. Tra le caratteristiche fisiche di base
+              ricordiamo: 1,5
+              cm circa di lunghezza, torace marrone &quot;peloso&quot;, addome giallo e nero.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-controls="collapseFive">
+              <img src="res/fotoAnimali/balestruccio.jpg" class="img-fluid" alt="">
+              Balestruccio
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/balestruccio.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Delichon urbicum Linnaeus, 1758</h6> 
+              <!-- Balestruccio -->
+              Il Balestruccio è una piccola rondine che ha una particolare predilezione per gli ambienti antropizzati e
+              sceglie aree
+              anche densamente abitate per riprodursi. La sua silhouette affusolata ed aerodinamica ha un riconoscibile
+              piumaggio
+              nero-bluastro lucido sul dorso con gola e pancia bianca così come anche le zampe ricoperte di piume. E’
+              facile
+              osservarlo ad Assisi anche sul monumentale edificio della Basilica che offre un ideale sito di
+              nidificazione.
+              Il Balestruccio arriva in Italia a marzo e vi rimane circa sette mesi, fino a ottobre, per poi ripartire
+              verso le regioni
+              subsahariane e il sud dell’Africa, dove passa l’inverno in climi più caldi. Ma ritorna nello stesso luogo
+              ogni
+              primavera per tutta la sua vita. E’ una specie gregaria: migra in gruppo e nidifica all’interno di colonie
+              molto
+              numerose.
+              Nidifica principalmente sotto le grondaie o i cornicioni degli edifici. La costruzione del nido è molto
+              elaborata e
+              richiede circa due settimane: vengono utilizzate minute palline di fango incollate con la saliva a formare
+              un piccolo
+              globo con un foro d’accesso laterale o superiore. L’interno del nido viene ricoperto di fieno e piume. I
+              Balestrucci,
+              come le Rondini, i Rondoni e i Passeri per la loro caratteristica di nidificare sugli edifici, sono specie
+              tutelate e
+              protette e per legge quindi i loro nidi non possono essere distrutti. Il Balestruccio non ama posarsi sui
+              rami e supera
+              la Rondine comune in agilità, velocità dei volteggi e anche per le altezze raggiunte in volo: è un agile e
+              veloce
+              volatore che caccia in volo piccoli insetti.
+              William Shakespeare così descrive il Balestruccio nel Macbeth, riferendosi all’abitudine di costruire il
+              nido in
+              qualunque spazio, creato dall’uomo o dalla natura, sufficientemente riparato e accogliente: "Non v’è
+              sporgenza,
+              fregio, contrafforte o cantuccio che appena sembri adatto, dove l’uccello non abbia intessuto con grande
+              amore il
+              suo pendulo letto e n’abbia fatto una feconda culla".
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-controls="collapseSix">
+              <img src="res/fotoAnimali/ballerina_bianca.jpg" class="img-fluid" alt="">
+              Ballerina bianca
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/ballerina_bianca.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Motacilla alba Linnaeus, 1758</h6> <!-- Ballerina bianca -->
+              la Ballerina Bianca si può facilmente osservare tutto l’anno sui tetti e nei sentieri di Petrignano
+              d’Assisi. Delle
+              dimensioni di un merlo, ha un aspetto elegante e slanciato, con una lunga coda ed una caratteristica
+              livrea
+              bianca,
+
+              nera e grigia. La Ballerina bianca deve il suo nome al tipico modo di muoversi sul terreno: cammina
+              velocemente
+              muovendo ritmicamente la coda e spicca voli ondulati dopo una rapida corsa. Piuttosto comune nella nostra
+              regione
+              (Umbria) frequenta le zone umide e i campi arati, le rive dei laghi e, in generale, i luoghi in cui siano
+              presenti
+              specchi e corsi d’acqua, poiché è qui che la Ballerina bianca va a caccia delle sue prede. Nel suo
+              ambiente
+              preferito
+              si nutre prevalentemente di insetti, ragni e piccoli molluschi. Negli ultimi decenni come tante altre
+              specie
+              selvatiche
+              si è adattata agli ambienti urbani e periurbani, dove è facile osservarla spostarsi camminando sui tetti e
+              sulle strade
+              poco trafficate ed anche sulle mangiatoie di parchi e giardini purché siano localizzate in ampi spazi
+              aperti. Nell’area
+              di Petrignano la si può osservare a caccia nei prati e nei campi o sulle sponde del Chiascio.
+              Quest’uccello passeriforme spesso insegue le mandrie di animali al pascolo per catturare, cacciando in
+              volo,
+              gli
+              insetti o altri invertebrati che si sollevano fra gli zoccoli. Tra gli adattamenti più singolari di alcune
+              popolazioni di
+              Ballerine bianche vi è l’abitudine di alimentarsi dei parassiti delle pecore, zecche ed altri insetti
+              annidati nel
+              mantello lanoso, posandosi direttamente sugli animali in particolare nel periodo successivo alla tosatura
+              degli ovini.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-controls="collapseSeven">
+              <img src="res/fotoAnimali/biacco.jpg" class="img-fluid" alt="">
+              Biacco (serpente)
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/biacco.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Hierophis viridiflavus Lacépède, 1789</h6>
+              <!-- Biacco (serpente) -->
+              Il Biacco è un serpente, non velenoso, oggi diventato molto frequente anche nelle nostre città (giardini,
+              parchi
+              pubblici ma anche nelle zone umide e paludose). Frequentando gli ambienti urbanizzati il Biacco trova
+              sicuramente
+              cibo e riparo, ma anche i suoi predatori.
+              Si distingue per la particolare colorazione dominata nelle parti superiori dal nero ma con il ventre di
+              colore chiaro. Il
+              capo e il dorso hanno screziature gialle che formano un reticolo irregolare. Diversamente dalla biscia
+              d&#39;acqua, le
+              squame del dorso sono completamente lisce. È un serpente molto agile e veloce (fino a 11 km all&#39;ora),
+              ottimo
+              arrampicatore e buon nuotatore. Può raggiungere mediamente 1,5m di lunghezza.
+              Ha abitudini diurne. Si nutre di altri rettili, di uova di piccoli uccelli, di piccoli mammiferi (topi e
+              ratti) ed anfibi;
+              occasionalmente nuota agilmente in immersione, alla ricerca di piccoli pesci. Il periodo
+              dell’accoppiamento
+              coincide
+              con l’inizio della primavera. E’ poi molto attivo nel periodo di schiusa delle uova (agosto-settembre) e
+              infine
+              all’inizio dell’autunno quando ha necessità di nutrirsi prima del lungo letargo invernale.
+              Se disturbato dall&#39;uomo, preferisce darsi alla fuga, ma se catturato o bloccato non esita a lanciarsi
+              con furia verso
+              l’aggressore assestando numerosi morsi, che, a causa dei denti ricurvi e affilati, possono procurare delle
+              leggere
+              lacerazioni. Il morso è tuttavia innocuo.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-controls="collapseEight">
+              <img src="res/fotoAnimali/capriolo.jpg" class="img-fluid" alt="">
+              Capriolo
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/capriolo.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Capreolus capreolus Linnaeus, 1758</h6> 
+              <!-- Capriolo -->
+              Il Capriolo è un mammifero ungulato che si presenta con un manto tendente al fulvo. 
+              Negli ultimi decenni del secolo scorso la
+              specie, quasi
+              scomparsa a causa dell’indiscriminata caccia, ha ricolonizzato spontaneamente le Alpi e gli Appennini
+              settentrionali,
+              mentre in quelli centrali e meridionali si è diffuso grazie a numerose reintroduzioni in parchi, riserve e
+              foreste
+
+              demaniali. Vive in boschi con fitto sottobosco, inframmezzati da radure, zone cespugliose e nelle campagne
+              coltivate purché vi siano boscaglie in cui rifugiarsi. E’ una specie erbivora: si nutre in particolare di
+              erba, ma non
+              disdegna corteccia, foglie, germogli di latifoglie, conifere e frutti.
+              Il maschio è provvisto di un palco, negli adulti con tre punte per lato, che cadono ogni anno in autunno e
+              ricrescono
+              alla fine dell&#39;inverno. Le recenti ricerche scientifiche hanno messo in evidenza un complesso
+              comportamento
+              sociale: mentre i maschi conducono per gran parte dell&#39;anno un&#39;esistenza solitaria, le femmine
+              vivono riunite in
+              branchi composti da 3-7 individui in cui le gerarchie e i rapporti sociali sono ben definiti e strutturati
+              e
+              dove c’è
+              sempre un individuo dominante. Con l&#39;arrivo dell&#39;autunno anche i maschi si uniscono ai branchi di
+              femmine ma
+              vanno ad occupare spesso un posto subordinato nella gerarchia del gruppo. Il periodo degli amori va da
+              metà
+              luglio
+              a fine agosto. Le femmine nella tarda primavera partoriscono, normalmente 1 o 2 piccoli, raramente tre,
+              dal
+              caratteristico mantello bruno maculato.
+              Facendo una passeggiata nel bosco in primavera può capitare di imbattersi nei cuccioli di pochi giorni o
+              settimane,
+              soli solo in apparenza, infatti le madri si allontanano temporaneamente per cercare cibo. Bisogna dunque
+              evitare di
+              toccare o peggio ancora raccogliere i piccoli che nell&#39;attesa si nascondono immobili fra la
+              vegetazione,
+              perché
+              l&#39;odore umano allarmerà la madre che smetterà di allattarli, con gravi conseguenze per la loro
+              sopravvivenza.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-controls="collapseNine">
+              <img src="res/fotoAnimali/carpa.jpg" class="img-fluid" alt="">
+              Carpa
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/carpa.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Cyprinus carpio L., 1758</h6> 
+              <!-- Carpa -->
+              La Carpa è sicuramente uno dei pesci più noti che popolano i nostri corsi d’acqua. Ma se, nonostante le
+              sue
+              origini
+              asiatiche nei fiumi italiani è oramai ben acclimatata e considerata di grande interesse per la pesca, è
+              pur
+              vero che è
+              facile trovarla anche negli stagni, nei laghetti e nelle fontane cittadine. La Carpa è un ciprinide che
+              può
+              raggiungere
+              anche grandi dimensioni e non ha particolari esigenze ambientali. L’alimentazione degli adulti è a base di
+              organismi
+              acquatici dalle ridotte dimensioni: vermi, larve, gasteropodi, bivalvi ed invertebrati in genere, scovati
+              filtrando e
+              rovistando fra i sedimenti o nel fondo delle vasche, ma non disdegna ovature di pesci o di anfibi, piccoli
+              avannotti o
+              girini, risorse alimentari di facile accesso sulla componente vegetale.
+              Differenti aspetti e livree sono diffuse nelle nostre aree blu. Ciò potrebbe far pensare a diverse specie,
+              tuttavia, anche
+              la più colorata delle carpe koi altro non è che un "Cyprinus carpio". Oggi è così sempre più facile
+              ritrovare
+              nelle
+              fontane delle nostre città i colori sgargianti delle carpe allevate a scopi ornamentali (rosso, arancione,
+              bianco), che si
+              alternano ai colori bruno-bronzeo della forma selvatica.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyNine" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyNine" aria-controls="collapseThirtyNine">
+              <img src="res/fotoAnimali/carpa_koi.jpg" class="img-fluid" alt="">
+              Carpa KOI
+            </button>
+          </h2>
+          <div id="collapseThirtyNine" class="accordion-collapse collapse" aria-labelledby="headingThirtyNine"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/carpa_koi.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Cyprinus carpio</h6> <!-- Carpa KOI -->
+              La Carpa koi è un pesce ornamentale asiatico ottenuto da incroci tra diverse specie. E’ considerata tra i
+              pesci decorativi più belli e costosi al mondo. E’ onnivora con tendenza erbivora e questo giustifica il
+              carattere pacifico e gregario della specie. Si caratterizza per la variabilità e vivacità dei colori e per
+              la presenza di due barbigli ai lati della bocca, con i quali cerca cibo nel fondo fangoso, ciottoloso o
+              sabbioso delle fontane cittadine.
+              Ama vivere in gruppi. Sono particolarmente attive quando la temperatura dell’acqua supera i 15-20°C,
+              mentre sotto i 10°C entrano in una fase di semi-ibernazione, nascondendosi sul fondo della fontana sepolte
+              nel fango per proteggersi dal freddo e superare l’inverno. Possono essere molto voraci. Di indole
+              mansueta, nella cultura popolare giapponese è simbolo di amicizia.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-controls="collapseTen">
+              <img src="res/fotoAnimali/cigno.jpg" class="img-fluid" alt="">
+              Cigno
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/cigno.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Cygnus olor Gmelin, 1789</h6> 
+              <!-- Cigno -->
+              Il Cigno è un uccello acquatico di grosse dimensioni. Si caratterizza per le corte zampe palmate, un lungo
+              collo e
+              grandi ali. I cigni nascono con il piumaggio grigio ma gli adulti, secondo la specie, possono essere
+              totalmente
+              bianchi o neri. In effetti nessun Cigno adulto ha il piumaggio totalmente nero: anche il Cigno nero
+              presenta
+              piume
+              bianche nelle ali, ben visibili quando vengono dispiegate ma nascoste completamente quando le ali sono
+              ripiegate
+              lungo il dorso. Hanno portamento elegante e l&#39;aspetto degli esemplari dei due sessi è molto simile.
+              Possono talvolta
+              diventare estremamente aggressivi e pericolosi se si sentono minacciati o per difendere il territorio.
+              I Cigni generalmente formano coppie monogame che restano tali tutta la vita. Nidificano tra i canneti,
+              dove
+              la
+              femmina cova le uova azzurrognole, mentre il maschio fa la guardia al nido. Sono essenzialmente erbivori:
+              si
+              nutrono in prevalenza di piante acquatiche e palustri, che strappano dal fondo o dalle rive; possono però
+              nutrirsi
+              anche immergendo il capo fino a una profondità massima di circa 80 centimetri o a profondità maggiori
+              verticalizzando tutto il corpo a testa in giù. Per far questo immergono la parte anteriore del corpo
+              mentre
+              quella
+              posteriore viene elevata fuori e per mantenere in equilibrio questo assetto, usano le zampe.
+              Possono camminare sulla terraferma lungo le rive, cibandosi così di erbe, foglie e semi, evitando comunque
+              di
+              allontanarsi molto dall&#39;acqua. Per aiutare la digestione, talvolta ingeriscono delle piccole quantità
+              di
+              sabbia, che nel
+              loro intestino ne facilita la triturazione. La dieta non è strettamente vegetariana: infatti, insieme alle
+              erbe, mangiano
+              anche piccoli animaletti acquatici come crostacei, larve d&#39;insetti e piccole lumache.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-controls="collapseEleven">
+              <img src="res/fotoAnimali/codirosso.jpg" class="img-fluid" alt="">
+              Codirosso comune
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/codirosso.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Phoenicurus ochruros S.G.Gmelin, 1774</h6>
+              <!-- Codirosso comune -->
+              Il Codirosso comune arriva nel nostro territorio, migrando dall’Africa, in primavera, quando il Codirosso
+              spazzacamino si sposta alle quote più alte. Il suo carattere distintivo è la coda dal color rosso-ruggine
+              che muove
+              continuamente quando si posa. Il maschio presenta una colorazione nera su gola, parte inferiore della
+              testa
+              e dorso,
+              mentre le ali sono nero-grigiastre; sulla fronte spicca una caratteristica fascia bianca. La femmina ha il
+              piumaggio di
+              un color bruno, ma le penne del sottocoda rimangono rossastre. Il maschio, che si occupa di trovare il
+              sito
+              adatto alla
+              nidificazione, per attirare la femmina vola intorno alla cavità prescelta su alberi o muri con le ali e la
+              coda aperte
+              emettendo un richiamo caratteristico, entra ed esce dal foro e si sporge all’esterno con il capo o la
+              coda.
+              Sarà però
+              poi la femmina, una volta scelto il sito, ad occuparsi interamente della preparazione del nido.
+              Nella zona della Rocca Minore di Assisi, è possibile osservarlo in canto o a caccia di piccoli
+              invertebrati
+              sulle mura
+              e sulla cima delle grandi querce che circondano l’antico edificio.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwelve" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-controls="collapseTwelve">
+              <img src="res/fotoAnimali/codirosso_spazzacamino.jpg" class="img-fluid" alt="">
+              Codirosso spazzacamino
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/codirosso_spazzacamino.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Phoenicurus phoenicurus Linnaeus, 1758</h6>
+              <!-- Codirosso spazzacamino -->
+              Il Codirosso spazzacamino è un piccolo uccello canoro che si sposta nelle aree collinari e vallive per
+              superare la
+              scarsità di cibo. Negli ultimi decenni si è adattato all&#39;habitat urbano come quello di Assisi, dove in
+              autunno e inverno
+              è facile osservarlo sugli antichi palazzi e nelle zone industriali: frequenta i tetti, i camini e le
+              antenne
+              dai quali,
+              anche in inverno, emette il suo tipico canto. Quando non è in volo, è appollaiato su sporgenze di edifici
+              o
+              su altri
+              posatoi muovendo in modo caratteristico la coda rosso-arancione che si presenta simile in entrambi i
+              sessi.
+              Dalle dimensioni simili a quelle di un passero comune, il maschio si caratterizza per il piumaggio
+              grigio-scuro
+              tendente al nero e con sulle ali una striscia bianca ben visibile nell’adulto. Il piumaggio della femmina
+              ha
+              invece
+              tonalità più smorzate sul grigio cenere. Si ciba prevalentemente di invertebrati che caccia fra le rocce e
+              gli anfratti;
+              nei mesi autunnali ed invernali integra la dieta con bacche e piccoli frutti. La coppia, monogama, nel
+              mese
+              di
+              maggio costruisce il proprio nido nelle fessure delle rocce o più raramente in grossi tronchi.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourtyOne" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFourtyOne" aria-controls="collapseFourtyOne">
+              <img src="res/fotoAnimali/codone_comune.jpg" class="img-fluid" alt="">
+              Codone comune
+            </button>
+          </h2>
+          <div id="collapseFourtyOne" class="accordion-collapse collapse" aria-labelledby="headingFourtyOne"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/codone_comune.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Anas acuta Linnaeus, 1758</h6>
+              <!-- codone comune -->
+              Si tratta di un’anatra di superficie con collo lungo e coda appuntita. Il maschio si distingue molto
+              facilmente per via del colore bruno-cioccolato della testa e della parte superiore del collo, mentre il
+              colore del petto è bianco. Frequenta ambienti acquatici aperti e paludosi. Nidifica nell’erba, tra le
+              dune,
+              in genere sul suolo asciutto e non vicino all’acqua. La sua alimentazione è soprattutto vegetali, come
+              semi,
+              tuberi, rizomi, o di organismi animali quali coleotteri d’acqua, larve d’insetti, molluschi, crostacei e
+              girini che trova nel fondale fangoso delle zone umide, con vegetazione non troppo fitta. 
+              In Umbria è più che altro di passaggio, nei mesi di febbraio-marzo o in autunno.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirteen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-controls="collapseThirteen">
+              <img src="res/fotoAnimali/colombo.jpg" class="img-fluid" alt="">
+              Colombo-piccione
+            </button>
+          </h2>
+          <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/colombo.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Columba livia L., 1758</h6> <!-- Colombo-piccione -->
+              Il Piccione domestico è il primo uccello che sia mai stato addomesticato. Lo attestano le tavolette
+              cuneiformi della
+              Mesopotamia e i geroglifici egizi di più di 5000 anni fa. E’ un uccello rinselvatichito. Diffuso in tutto
+              il
+              mondo
+              comprende diverse sottospecie quali il piccione viaggiatore, il colombaccio, il colombo domestico, il
+              piccione
+              selvatico.
+              Il Piccione domestico è granivoro, quindi la sua alimentazione si basa su cereali e leguminose. Ha
+              abitudini
+              stanziali
+              e nidifica su costoni e pareti rocciose, facilmente ritrovabili in un ambiente urbano dove gli edifici,
+              soprattutto quelli
+              più antichi, presentano anfratti e rifugi che riproducono molti aspetti naturali. Vivono in grandi gruppi
+              nei centri
+              urbani dove hanno la possibilità di trovare cibo abbondante con minimo dispendio energetico, un microclima
+              molto
+              favorevole, scarsa competizione per le fonti di cibo, e mancanza di predatori.
+              I Piccioni o Colombi di città sono caratterizzati da un alto tasso riproduttivo: 6, o anche 9
+              accoppiamenti
+              annuali,
+              con due uova per covata. La vita media è di 2,5-3 anni. Possono essere portatori di malattie infettive e
+              parassiti
+              nocivi per la salute dell&#39;uomo. Attraverso le loro deiezioni deturpano monumenti, edifici e possono
+              contaminare
+              alimenti o merci. I principali predatori dei Piccioni possono essere i falchi o falchetti di campagna, i
+              gheppi, e
+              quando non sono adulti, bisce e vipere.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFifteen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-controls="collapseFifteen">
+              <img src="res/fotoAnimali/faina.jpg" class="img-fluid" alt="">
+              Faina
+            </button>
+          </h2>
+          <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/faina.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Martes foina Erxleben, 1777</h6> 
+              <!-- Faina -->
+
+              La Faina è un piccolo e feroce carnivoro che in natura frequenta una grande varietà di ambienti, dalla
+              pianura fino ai
+              2.000 m, prediligendo aree forestali e boschive. Ma negli ultimi anni si è sempre più avvicinato alla
+              città
+              ed oggi
+              possiamo considerarlo adattato alla vita in aree urbane. E’ un animale dalle abitudini notturne: di giorno
+              si rifugia in
+              cavità naturali e anfratti riparati in antichi ruderi. Al tramonto o a notte fatta esce per muoversi
+              solitario e cacciare.
+              Tendenzialmente carnivoro caccia sugli alberi, sulle mura e sui tetti degli edifici antichi dove si
+              apposta
+              per lunghe
+              ore in attesa delle prede, talvolta di dimensioni ben più grandi delle sue, come fagiani e ratti, che
+              cattura di sorpresa.
+              Integra la dieta con miele, bacche, uova.
+              Ha la strana e particolare tendenza a mettere fuori uso le automobili masticandone i cavi in gomma del
+              motore.
+              Quando la Faina riesce ad intrufolarsi in un pollaio o in una conigliera, molto spesso uccide un numero di
+              animali
+              molto maggiore al suo fabbisogno immediato di cibo. Questo comportamento, noto come "surplus killing", ha
+              fatto
+              nascere la credenza popolare, assolutamente errata, secondo la quale si nutrirebbe principalmente, o
+              addirittura
+              esclusivamente, del sangue delle proprie prede.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSixteen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-controls="collapseSixteen">
+              <img src="res/fotoAnimali/gallinella_d_acqua.jpg" class="img-fluid" alt="">
+              Gallinella d’acqua
+            </button>
+          </h2>
+          <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/gallinella_d_acqua.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Gallinula chloropus Linnaeus, 1758</h6>
+              <!-- Gallinella d’acqua -->
+
+              La Gallinella d’acqua è un uccello che si caratterizza per il piumaggio scuro su cui risulta molto
+              evidente
+              la macchia
+              di cera rossa alla base del becco giallo. L&#39;atteggiamento e la fisionomia di questo uccello selvatico
+              ricordano molto
+              un pollo domestico: proprio da questa somiglianza deriva il nome di Gallinella d&#39;acqua.
+              Maschi e femmine hanno lo stesso aspetto. L’habitat ideale è rappresentato dalle zone umide: stagni,
+              laghi,
+              rocce,
+              terreni umidi e acque che scorrono lentamente con molte piante acquatiche. È qui che la Gallinella d’acqua
+              riesce
+              anche a recuperare le sue prede: insetti acquatici, piccoli pesci, crostacei, molluschi e germogli. Goffe
+              sulla
+              terraferma sono molto abili negli ambienti acquatici dove nuotano con caratteristici movimenti a scatti.
+              Non
+              è
+              considerata una specie in pericolo perché ampiamente diffusa in tutta Europa.
+              I nidi sono depositati in mezzo alla vegetazione nei pressi della riva. La specie è nidificante e
+              stanziale.
+              E’ solita
+              ripararsi tra gli alberi vicini all’acqua. Tollera abbastanza bene la presenza umana, per questo motivo è
+              spesso
+              presente nei parchi e nei giardini urbani.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeventeen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-controls="collapseSeventeen">
+              <img src="res/fotoAnimali/garzetta.jpg" class="img-fluid" alt="">
+              Garzetta
+            </button>
+          </h2>
+          <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/garzetta.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Egretta garzetta Linnaeus, 1766</h6> 
+              <!-- Garzetta -->
+
+              La Garzetta è un piccolo airone dall’elegante piumaggio bianco. Il becco è nero e sottile, le zampe
+              lunghe,
+              nere e
+              caratteristici piedi gialli. Nel periodo riproduttivo, l&#39;adulto sviluppa penne ornamentali, lunghe
+              fino
+              a 150 mm, sulla
+              nuca, sulla base del collo e del petto.
+              E’ un uccello molto legato all&#39;acqua: vive lungo le rive boscate di grandi fiumi e in zone
+              acquitrinose.
+              Lungo il
+              Chiascio la si può osservare in caccia spostarsi rapidamente nell’acqua bassa e con veloci movimenti
+              laterali della
+              testa catturare piccoli pesci, rane, granchi ed insetti acquatici. Spesso nei campi segue i mezzi
+              meccanici
+              che
+              rivoltano il terreno o accompagna anche il bestiame al pascolo alla ricerca di insetti, piccoli rettili,
+              mammiferi e
+              uccelli di piccola taglia. Nidifica in colonie dette “garzaie” spesso con altre specie di aironi, in
+              boschetti nei pressi di
+              ambienti umidi dove costruisce un rozzo nido su alti alberi.
+              Cacciata estensivamente nel XIX secolo per le sue penne ornamentali considerate merce pregiata nel campo
+              della
+              moda, la Garzetta si estinse nell&#39;Europa nord-occidentale, con un drastico calo di numero anche nel
+              sud
+              del
+              continente. Le leggi finalizzate alla sua conservazione introdotte dal 1950 hanno consentito al piccolo
+              airone di
+
+              riprendersi e di diffondersi nuovamente nel nostro continente. La specie ha di recente scoperto le rotte
+              occidentali e
+              sta procedendo la sua espansione fino al Nuovo Mondo.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourty" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFourty" aria-controls="collapseFourty">
+              <img src="res/fotoAnimali/gazza.jpg" class="img-fluid" alt="">
+              Gazza
+            </button>
+          </h2>
+          <div id="collapseFourty" class="accordion-collapse collapse" aria-labelledby="headingFourty"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/gazza.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Pica pica Linnaeus, 1758</h6> 
+              <!-- Gazza -->
+
+              La Gazza è un uccello noto per la sua intelligenza e per il comportamento curioso. E’ animale sociale che ama vivere in gruppi numerosi. 
+              Il piumaggio è nero e bianco e ha una coda lunga e trapezoidale nera con evidenti riflessi metallici bronzeo-verdastri. Il becco è nero. 
+            La dieta della Gazza è molto varia e comprende insetti, piccoli mammiferi, uova e nidiacei di altri uccelli, frutta e semi. 
+            I diversi individui comunicano tra loro attraverso una serie di richiami e suoni che utilizzano per segnalare la presenza di cibo o di pericoli. Sono in grado di utilizzare strumenti per ottenere cibo, 
+            un comportamento che è stato osservato solo in poche altre specie animali. 
+            Il nido della Gazza è costituito da ramoscelli e foderato con materiali morbidi come muschio, lana o peli di animali. 
+            A volte sono decorati con oggetti luccicanti. E’ in genere localizzato in luoghi nascosti o di difficile accesso. Sono molto territoriali. 
+            Il comportamento della Gazza ladra è stato oggetto di numerosi studi scientifici. 
+            Gli esperti hanno scoperto e dimostrato che questi uccelli sono in grado di riconoscere se stessi in uno specchio e non sono attratti dagli oggetti luccicanti per il loro valore, 
+            ma data la loro indole sempre alla ricerca di nuovi stimoli e di nuove esperienze, li raccolgono per il piacere di manipolarli e il gusto della novità.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEighteen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-controls="collapseEighteen">
+              <img src="res/fotoAnimali/germano_reale.jpg" class="img-fluid" alt="">
+              Germano reale
+            </button>
+          </h2>
+          <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/germano_reale.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Anas platyrhynchos Linnaeus, 1758</h6>
+              <!-- Germano reale -->
+                Il germano reale trascorre gran parte della giornata sull’acqua e si spinge sulla terraferma solo per la nidificazione o per riposare. Diffusissimo nei nostri stagni e corsi d’acqua, si è adattato oramai a vivere sia in campagna sia in città. Presenta differenze assai marcate tra i sessi per quanto riguarda la colorazione del piumaggio: il maschio ha testa e collo verde scuro, brillante, e un sottile collare bianco che sottolinea il contrasto con il nero del petto. Anche la coda è scura, con sfumature grigie e qualche tratto bianco. La femmina, al contrario, è in prevalenza bruna, con una varietà di sfumature dal beige al marrone. Il periodo della riproduzione va da febbraio a luglio. Terminato il periodo dell’accoppiamento, durante l’estate i maschi perdono i colori brillanti fino ad assumere una colorazione simile alle femmine. Il nido è piuttosto rudimentale, fatto di ramoscelli e di piume che la femmina strappa da un punto particolare del proprio petto.
+                E’ la specie di anatra più cacciata in tutta Europa e quindi anche la più allevata a scopo venatorio.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNineteen" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-controls="collapseNineteen">
+              <img src="res/fotoAnimali/istrice.jpg" class="img-fluid" alt="">
+              Istrice
+            </button>
+          </h2>
+          <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/istrice.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Hystrix cristata Linnaeus, 1758</h6> <!-- Istrice -->
+              Nei grandi parchi può essere abbastanza facile incontrare l’Istrice. Roditore di grandi dimensioni si
+              caratterizza
+              sicuramente per la presenza di setole e aculei sul dorso. Gli aculei possono raggiungere i 30 cm di
+              lunghezza, e si
+              contraddistinguono per la presenza di anelli bianchi e neri alternati, solitamente 4 o 5, e terminano con
+              una lunga
+              punta bianca. Sulla cresta nucale, invece, sono presenti lunghi peli sottili, fino a 45 cm, principalmente
+              neri. Il collo
+              e la testa sono inoltre ricoperte da setole scure. Sia la cresta che gli aculei si drizzano quando
+              l&#39;animale è impaurito o
+              minacciato.
+              E’ una specie notturna. Durante le ore diurne si rifugia nelle buche sotto gli alberi o in tane
+              abbandonate
+              di altri
+              animali e nei crepacci rocciosi. Non scava le proprie tane. A causa delle sue grandi dimensioni si muove
+              trotterellando. Non è in grado di arrampicarsi.
+              Sono animali sociali e gregari. È specie erbivora. Si nutre di frutta caduta, radici, bulbi e cortecce.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwenty" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-controls="collapseTwenty">
+              <img src="res/fotoAnimali/marzaiola.jpg" class="img-fluid" alt="">
+              Marzaiola
+            </button>
+          </h2>
+          <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/marzaiola.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Spatula querquedula Linnaeus, 1758</h6> <!-- Marzaiola -->
+
+              La Marzaiola è un uccello acquatico molto diffuso in tutto il continente Europeo. In inverno si
+              trattiene vicino ai
+              laghi e nei territori fluviali alluvionali. E’ considerata un’anatra “di superficie”, in quanto immerge
+              solamente il
+              capo per nutrirsi ed evita di andare sott’acqua. La specie si nutre essenzialmente di vegetali che trova a
+              pelo
+              d’acqua, oppure di piccoli animali acquatici: insetti e loro larve, crostacei, molluschi, vermi, girini,
+              avannotti.
+              Piuttosto pigra, trascorre la giornata riposando e dormendo.
+              Maschio e femmina sono molto simili nel colore del piumaggio. Particolare però inconfondibile è una
+              macchia
+              a
+              forma di mezzaluna, che va dall’occhio alla nuca. Specie gregaria, durante la migrazione forma stormi di
+              grandi
+              dimensioni in formazione a nuvola, che si innalzano compatti e coordinati, cambiando spesso direzione e
+              struttura.
+              Nidifica in specchi d’acqua dolce anche piccoli, stagni, paludi, terreni allagati anche di piccole
+              dimensioni purché
+              aperti e con fondali bassi, riparati e con vegetazione rada. Per questo oramai è facile ritrovarle anche
+              nelle aree blu
+              urbane e periurbane.
+              Arriva in Italia nel mese di marzo, compiendo una caratteristica rotta di migrazione circolare: in
+              primavera
+              risale
+              sorvolando dapprima il Sahara e successivamente il Mediterraneo centrale, i Balcani e quindi l’Italia.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyEight" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyEight" aria-controls="collapseThirtyEight">
+              <img src="res/fotoAnimali/minilepre.jpg" class="img-fluid" alt="">
+              Minilepre
+            </button>
+          </h2>
+          <div id="collapseThirtyEight" class="accordion-collapse collapse" aria-labelledby="headingThirtyEight"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/minilepre.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Sylvilagus floridanus Allen, 1890
+              </h6> <!-- Minilepre -->
+
+              Introdotta negli ultimi decenni in Europa a scopi venatori o come animale da compagnia, la Minilepre
+              arriva in Italia nel 1966. E’ una specie oggi molto comune nei giardini e parchi pubblici delle aree
+              urbane e suburbane. Il colore della pelliccia varia dal bruno, al rossiccio, al grigio. Ha orecchie non
+              molto lunghe ma arrotondate, grandi zampe posteriori e una coda bianca a batuffolo. E’ tendenzialmente
+              erbivora: la sua alimentazione può variare a seconda della disponibilità delle risorse alimentari e delle
+              stagioni. Infatti in estate si nutre di vegetali verdi, erbe selvatiche e piante erbacee, erba e
+              trifoglio, ma d'inverno anche di corteccia, germogli e ramoscelli. Questo comportamento che fa parte della
+              loro strategia di sopravvivenza, può causare danni alle piante. Per proteggerle, infatti, alcune
+              amministrazioni utilizzano recinzioni alla base del fusto. E’ un animale territoriale, solitario,
+              soprattutto notturno, ma attivo anche dall'alba al crepuscolo. Quando corre, può compiere salti di 3-4
+              metri, e per sfuggire ai predatori procede a zig zag.
+              Non scava tane, ma la Minilepre ricava il nascondiglio in piccoli avvallamenti del terreno tra l’erba
+              alta, sotto i cespugli o lungo gli argini dei fiumi.
+              Il periodo riproduttivo va da febbraio a settembre, durante il quale la Minilepre tende a rimanere
+              nascosta nel sottobosco fino a quando la numerosa cucciolata (anche 9 leprotti che nascono ciechi e nudi)
+              diventano abbastanza indipendenti per iniziare a esplorare l’ambiente circostante e a cibarsi di cibo
+              solido.
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentyOne" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentyOne" aria-controls="collapseTwentyOne">
+              <img src="res/fotoAnimali/moriglione.jpg" class="img-fluid" alt="">
+              Moriglione
+            </button>
+          </h2>
+          <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/moriglione.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Aythya ferina Linnaeus, 1758</h6> 
+              <!-- Moriglione -->
+
+              Il Moriglione è un uccello acquatico che predilige i grandi spazi aperti, in particolare gli specchi di
+              acqua dolce poco
+              profondi e con scarsa vegetazione. Ha un notevole istinto gregario, per cui si riunisce in branchi
+              numerosi
+              non solo
+              con individui della sua specie ma anche di altri uccelli acquatici. E’ considerata una anatra tuffatrice
+              che
+              si alza in
+              volo con fatica, quasi strisciando sul pelo dell’acqua, ma una volta innalzatasi in aria è forte e veloce.
+              La sua
+              specialità è il nuoto sott’acqua, dove è capace di percorrere lunghi tratti in immersione.
+              Il maschio si riconosce per testa e collo rossiccio e il petto nero, la femmina, invece, ha il piumaggio
+              uniformemente
+              bruno tendente al grigio. È una specie onnivora. Si nutre di semi, radici e foglie di piante acquatiche ma
+              si procura il
+              cibo anche immergendosi completamente in acqua per andare alla ricerca di insetti e larve, molluschi,
+              crostacei e
+              anfibi.
+              Per la riproduzione sceglie preferibilmente ambienti d’acqua dolce ma anche salmastre. Nelle aree blu
+              urbane
+              e
+              periurbane il Moriglione si stabilisce soprattutto durante le migrazioni. I periodi di massima presenza
+              sono
+              ottobre-novembre e febbraio-marzo. Il nido, posto sempre nelle vicinanze dell’acqua e nascosto tra la vegetazione
+              è
+              costruito con steli, giunchi e canne.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentyTwo" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentyTwo" aria-controls="collapseTwentyTwo">
+              <img src="res/fotoAnimali/nutria.jpg" class="img-fluid" alt="">
+              Nutria
+            </button>
+          </h2>
+          <div id="collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwentyTwo"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/nutria.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Myocastor coypus Molina, 1782</h6> 
+              <!-- Nutria -->
+
+              La Nutria o Castorino, è un mammifero roditore originario del Sud America. Fu importata in Italia per la
+              sua
+              pelliccia intorno al 1930. Di grandi dimensioni ha incisivi larghi e robusti, di colore arancione. Il pelo
+              è
+              bruno più o
+              meno dorato. I maschi sono solitamente più grandi delle femmine. È una specie semi-acquatica, notturna e
+              serale,
+              anche se è spesso visibile di giorno. Vive in acquitrini, rive dei laghi e corsi d&#39;acqua lenti.
+              Utilizza
+              tane di altri
+              animali come rifugio, oppure scava sistemi di cunicoli che variano da semplici tunnel a complessi di
+              camere
+              e
+              passaggi che si estendono per oltre 15 metri. Questo causa un forte indebolimento agli argini dei fiumi e
+              dei laghi.
+              Si nutre di piante erbacee spontanee acquatiche e non, delle quali preferisce le radici, i tuberi e i
+              rizomi, ma anche
+              dei prodotti dei campi coltivati vicino gli ambienti umidi dove vive causando notevoli danni
+              all’agricoltura. Si
+              riproduce due o tre volte l’anno, tra maggio e novembre.
+              E’ considerata tra le 100 specie alloctone più invasive del mondo e in Italia è ufficialmente ritenuta
+              “specie
+              indesiderabile sul territorio nazionale” perché causa notevoli danni al territorio, alla fauna acquatica e
+              alle colture.
+              Le campagne di contenimento mediante cattura, sterilizzazione chirurgica o immuno-contraccettivi e
+              successiva
+              liberazione, richiedono però rilevanti impegni economici ed operativi, e spesso sono poco praticabili.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourtyTwo" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFourtyTwo" aria-controls="collapseFourtyTwo">
+              <img src="res/fotoAnimali/oca_granaiola.jpg" class="img-fluid" alt="">
+              Oca granaiola
+            </button>
+          </h2>
+          <div id="collapseFourtyTwo" class="accordion-collapse collapse" aria-labelledby="headingFourtyTwo"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/oca_granaiola.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Anser fabalis Latham, 1787</h6> 
+              <!-- Oca granaiola -->
+              L'Oca granaiola ha un piumaggio brunastro con evidenti e forti sfumature bianche e arancioni. Zampe e becco arancione. I
+              due
+              sessi si somigliano e per questo difficilmente distinguibili ad occhi inesperti. Anche quando è posata è
+              difficile riconoscerla per via del suo notevole mimetismo. E’ specie migratrice che nidifica difficilmente
+              in Umbria.
+              Si nutre soprattutto di vegetali che va a cercare nei campi coltivati al tramonto. Si alimenta infatti,
+              camminando su aree aperte e c'è sempre qualche individuo che fa da sentinella pronto a dare l'allarme. E'
+              specie gregaria anche in volo. Il volo è potente, rettilineo, veloce e spesso assume la caratteristica
+              formazione a "V".
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentyFour" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentyFour" aria-controls="collapseTwentyFour">
+              <img src="res/fotoAnimali/passero_comune.jpg" class="img-fluid" alt="">
+              Passero comune
+            </button>
+          </h2>
+          <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/passero_comune.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Passer italiae Vieillot, 1817</h6> 
+              <!-- Passero comune -->
+
+              Il Passero comune, o Passera d’Italia, è diffuso negli ambienti antropizzati e nelle campagne con prati e
+              coltivi
+              tradizionali. Dall’indole confidente ed adattabile si avvicina con facilità alle persone alla ricerca di
+              cibo.
+              Tendenzialmente granivora, si nutre di cereali coltivati e graminacee spontanee, ma anche di verdura,
+              frutta, bacche
+              e germogli, integrando la dieta nel periodo della riproduzione con insetti ed altri piccoli invertebrati.
+              Il
+              piumaggio
+              differisce fra maschio e femmina: il maschio ha il capo bruno rossiccio con le guance bianche e un’ampia
+              macchia
+              nera sulla gola, la femmina ha una livrea più dimessa, bruno screziato sul dorso e giallastro sul petto.
+              Nidifica preferibilmente in cavità e nelle fenditure dei fabbricati, ma anche su rocce, scarpate e a volte
+              tra i rami
+              degli alberi, curiosamente alla base di nidi di altre specie anche di grandi dimensioni come aironi e
+              rapaci
+              diurni.
+              Per decenni è stata considerato una sottospecie del Passero domestico. Solo nel 2013 il Congresso
+              Ornitologico
+              Internazionale, grazie a specifici studi genetici che hanno fugato tutti i dubbi, ha riconosciuto il
+              Passero
+              comune
+              come una specie distinta.
+              A causa del massiccio utilizzo dei pesticidi in agricoltura le popolazioni di Passero comune sono in
+              Europa
+              ed in
+              Italia in forte calo. Proprio per tale sensibilità è considerata un indicatore delle buone condizioni
+              degli
+              ecosistemi
+              agrari.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourtyThree" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseFourtyThree" aria-controls="collapseFourtyThree">
+              <img src="res/fotoAnimali/pavone.jpg" class="img-fluid" alt="">
+              Pavone comune
+            </button>
+          </h2>
+          <div id="collapseFourtyThree" class="accordion-collapse collapse" aria-labelledby="headingFourtyThree"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/pavone.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Pavo cristatus Linnaeus, 1758</h6> 
+              <!-- pavone -->
+             Il Pavone è un uccello originario dell’India e dello Sri Lanka, noto sin dai tempi dell’Impero Romano. Di taglia medio grande, è conosciuto al grande pubblico per la caratteristica coda piumata dei maschi che ha funzione specifica durante il corteggiamento. Il dimorfismo sessuale di questa specie è molto evidente: il maschio oltre ad essere più grande della femmina, ha la testa e il collo ricoperte di piume blu elettrico dai riflessi metallici. La zona intorno all'occhio è nuda con pelle bianca interrotta da una striscia nera. Sulla nuca un elegante ciuffo. I colori della femmina, invece, sono più scuri: ha la testa bianca e bruna decorata, anche lei, da un piccolo ciuffo di penne sulla nuca. E’ animale onnivoro: la maggior parte della dieta è definita da semi di graminacee, frutti e chicchi di mais, ma non disdegna insetti, e anche piccoli vertebrati come rettili e roditori.
+                E’ animale poligamo per cui ogni maschio ha un harem di 4-5 femmine. In primavera il Fagiano femmina depone dalle 4 alle 9 uova in un nido scavato a terra. 
+                Il volo è basso e poco attivo. E’ un uccello camminatore.
+                Tra gli animali più apprezzati per la bellezza della livrea e della coda del maschio, e per la sua grande adattabilità, il Pavone oggi è spesso allevato come principale ornamento per parchi e giardini pubblici.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentySix" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentySix" aria-controls="collapseTwentySix">
+              <img src="res/fotoAnimali/picchio_rosso.jpg" class="img-fluid" alt="">
+              Picchio rosso
+            </button>
+          </h2>
+          <div id="collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="headingTwentySix"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/picchio_rosso.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Dendrocopos major Linnaeus, 1758</h6> 
+              <!-- Picchio rosso -->
+
+              Il Picchio rosso maggiore è un uccello insettivoro oramai ben adattato ai parchi cittadini, dove sono
+              presenti alberi
+              di grandi dimensioni. E’, infatti, un grande cacciatore di larve ed insetti che ricerca nelle cortecce
+              degli
+              alberi ed
+              individua grazie al rumore che questi emettono rodendo il legno. Con il robusto becco il Picchio rosso
+              maggiore
+              buca la corteccia dell’albero “tambureggiando” all’incredibile ritmo di 10-16 percussioni al secondo e con
+              la lunga
+              lingua retrattile cattura le prede. La sua dieta è integrata da semi, ghiande e frutta.
+              I due sessi presentano una livrea simile: bianca e nera con sottocoda rossa. Il maschio si distingue
+              soltanto per
+              un’ulteriore ed evidente macchia rossa sulla nuca. Il becco è nero, appuntito e robusto, e le zampe sono
+              conformate
+              per agevolare lo spostamento in verticale sui tronchi, che il Picchio rosso maggiore risale a saltelli
+              aggrappandosi
+              con le forti zampe e aiutandosi con la rigida coda.
+              Al di fuori del periodo riproduttivo è una specie solitaria, ma a febbraio inizia a mostrare un
+              comportamento
+              territoriale. Il maschio difende vivacemente la propria porzione di bosco con l’insistente “tambureggiare”
+              sui tronchi
+              per delimitare il territorio ed attirare l’attenzione della femmina. Al termine del lungo rituale di
+              corteggiamento, la
+              coppia nidifica in cavità scavate nel tronco o in rami particolarmente robusti. Il nido viene trovato a
+              circa una decina
+              di metri d’altezza ed ha un diametro d’ingresso non superiore ai 5 centimetri.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentySeven" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentySeven" aria-controls="collapseTwentySeven">
+              <img src="res/fotoAnimali/pipistrello.jpg" class="img-fluid" alt="">
+              Pipistrello
+            </button>
+          </h2>
+          <div id="collapseTwentySeven" class="accordion-collapse collapse" aria-labelledby="headingTwentySeven"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/pipistrello.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Chiroptera Blumenbach, 1779</h6> 
+              <!-- Pipistrelli -->
+
+              I Pipistrelli appartengono ad un ordine di mammiferi placentati molto numeroso. Secondo la specie possono
+              pesare
+              dai 2 grammi al 1,6 kg. Sono gli unici mammiferi in grado di volare grazie alla modificazione dell’arto
+              superiore. Le
+              velocità di volo sono variabili e comprese, secondo la specie, tra 16 km/h e 165 km/h. Ma possono anche
+              correre
+              velocemente, arrampicarsi e nuotare. Il corpo è generalmente ricoperto di una fitta pelliccia. Grazie
+              all’ecolocalizzazione riescono ad orientarsi nell’oscurità totale.
+              Di giorno si rifugiano all&#39;interno di cantine e sottotetti, case abbandonate, grandi edifici
+              storico-monumentali,
+              fessure rocciose, cavità di alberi. Di notte invece cacciano vicino all’acqua o in aria. Secondo le specie
+              esistono
+              pipistrelli insettivori, carnivori, piscivori, ematofagi, frugivori, nettarivori e mangiatori di polline.
+              Alcune sono in
+              grado di adattarsi all&#39;urbanizzazione imparando a cacciare gli insetti nei pressi di fonti di luce
+              artificiali come i
+              lampioni. Ma, in effetti i luoghi più adatti rimangono gli spazi verdi intorno ai fiumi, anche in ambiente
+              urbano.
+              Questi garantiscono una fonte di acqua potabile ed elevata presenza di insetti. Su scala locale, quindi,
+              migliorare e
+              mantenere la vegetazione sugli argini dei corsi d&#39;acqua può portare benefici a una vasta gamma di
+              specie
+              di
+              pipistrelli, riducendo nel contempo i livelli di specie vegetali invasive.
+              Sono animali longevi che vanno in ibernazione dal tardo autunno all’inizio della primavera. In città
+              svolgono
+              l’importante ruolo di controllo delle popolazioni di insetti molesti e parassiti dato che sono migliaia
+              gli
+              insetti che
+              ogni singolo pipistrello può predare ogni notte negli ambienti più diversi. Sono molto sensibili ai
+              pesticidi e ciò ne
+              fa, loro malgrado, importanti e utili bioindicatori di qualità ambientale, anche in ambienti antropizzati.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentyEight" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentyEight" aria-controls="collapseTwentyEight">
+              <img src="res/fotoAnimali/rana_verde.jpg" class="img-fluid" alt="">
+              Rana verde
+            </button>
+          </h2>
+          <div id="collapseTwentyEight" class="accordion-collapse collapse" aria-labelledby="headingTwentyEight"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/rana_verde.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Anura Waldheim, 1813</h6> 
+              <!-- Rane -->
+
+              Con Rana verde si intende un complesso di specie di difficile distinzione. Sono anfibi la cui varietà
+              cromatica è
+              davvero grande: il dorso è tipicamente verde, ma a volte è marrone, oppure un miscuglio tra i due colori.
+              E’
+              tipica di
+              zone umide e conduce una vita prevalentemente acquatica frequentando però anche le aree aperte,
+              cespugliate
+              e
+              boscate. Si nutre generalmente di insetti come mosche, zanzare. Nei parchi e nelle aree blu periurbane può
+              essere
+              oggi più facile incontrarle.
+              Le Rane si sono adattate con successo all’ambiente urbano tanto che diversi studi scientifici hanno
+              rilevato
+              che i
+              maschi di città emettono, per le femmine, versi di corteggiamento più frequenti e con vocalizzi più
+              complessi. Le
+              rane di città sembrano quindi essere più “rumorose” di quelle che vivono in zone umide: ciò potrebbe
+              essere
+              giustificato dal fatto che l’ambiente urbano è più rumoroso e farsi sentire e capire più difficile, oppure
+              che la
+              competizione per l’accoppiamento è maggiore rispetto alle aree rurali.
+            </div>
+          </div>
+        </div>
+
+        <div id="sonaglia" class="accordion-item">
+          <h2 class="accordion-header" id="headingTwentyNine" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwentyNine" aria-controls="collapseTwentyNine">
+              <img src="res/fotoAnimali/riccio_comune.jpg" class="img-fluid" alt="">
+              Riccio comune
+            </button>
+          </h2>
+          <div id="collapseTwentyNine" class="accordion-collapse collapse" aria-labelledby="headingTwentyNine"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/riccio_comune.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Erinaceus europaeus Linnaeus, 1758</h6> 
+              <!-- Riccio -->
+
+              Il Riccio europeo o Riccio comune è un piccolo mammifero che solo eccezionalmente supera il chilogrammo di
+              peso. L&#39;olfatto è il principale senso del riccio. Il naso è grosso, nero e mobile. Nonostante le
+              piccole
+              orecchie
+              seminascoste dal pelo, i ricci sono in grado di udire frequenze comprese fra i 250Hz e i 60.000Hz, quindi
+              ben dentro
+              gli ultrasuoni: ciò aiuta l&#39;animale nella ricerca del cibo.
+              Nell&#39;area che comprende la fronte, i fianchi e il dorso, il pelo cede il posto ad aculei (peli
+              modificati) lunghi circa 2
+              cm, di colore nero striato trasversalmente di bianco. In effetti gli aculei variano di colore al cambio di
+              stagione: nelle
+              stagioni fredde, autunno e inverno, assumono un colore marroncino più scuro rispetto alle stagioni calde,
+              primavera
+              ed estate, in cui presentano un colore più chiaro. Gli aculei che possono raggiungere anche il numero di
+              6000, sono
+              appuntiti e cavi.
+              Il Riccio è un animale esclusivamente notturno. Di giorno riposa tra i tronchi e le foglie cadute. Quando
+              un
+              riccio
+              incontra un possibile pericolo, normalmente reagisce immobilizzandosi e drizzando gli aculei sul dorso. Se
+              toccato
+              si appallottola su se stesso. Tendenzialmente ha abitudini solitarie e scontrose. Fra ottobre e aprile va
+              in
+              letargo.
+              E’ un animale onnivoro: si nutre di invertebrati di vario tipo come insetti, lumache, lombrichi, ragni,
+              scorpioni,
+              uova, rettili e anfibi. Ma non disdegna piccoli mammiferi, soprattutto topi, di cui è considerato un
+              cacciatore
+              spietato.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirty" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirty" aria-controls="collapseThirty">
+              <img src="res/fotoAnimali/rospo_comune.jpg" class="img-fluid" alt="">
+              Rospo comune
+            </button>
+          </h2>
+          <div id="collapseThirty" class="accordion-collapse collapse" aria-labelledby="headingThirty"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/rospo_comune.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Bufo bufo Linnaeus, 1758</h6> 
+              <!-- Rospo comune -->
+
+              Il Rospo comune o Rospo europeo è l’anfibio più grande d’Europa. Ha zampe corte e muso schiacciato. La
+              colorazione è marroncina che può tendere al rossiccio. La pelle è ricoperta di grumi simili a verruche.
+              Sono
+              animali
+              poco appariscenti e solitari. La femmina è di dimensioni maggiori rispetto al maschio. Vive
+              prevalentemente
+              nei
+              boschi umidi, prati e coltivi, ma anche ambienti urbani e giardini.
+              In prevalenza notturni, di giorno tendono a nascondersi in buche o anfratti, sotto le pietre o comunque in
+              luoghi
+              riparati dalla luce. Si attivano al crepuscolo, trascorrendo poi la notte a caccia delle prede di cui si
+              nutre: insetti,
+              lumache senza guscio, lombrichi, piccoli vertebrati come i topolini. La camminata è lenta e goffa o con
+              brevi salti.
+              Terminato il letargo invernale, verso l’inizio di marzo i rospi si recano vicino ai luoghi di
+              riproduzione,
+              stagni, corsi
+              d&#39;acqua, pozze dove i maschi competono per accoppiarsi con le femmine. Le uova vengono deposte in fili
+              gelatinosi
+              nell&#39;acqua e successivamente si schiudono formando girini. Dopo diversi mesi di crescita e sviluppo, a
+              questi
+              spuntano gli arti e subiscono la metamorfosi in piccoli rospi. I giovani emergono dall&#39;acqua e
+              rimangono
+              in gran
+              parte terrestri per il resto della loro vita. Il Rospo tende a tornare sempre nella stessa pozza d&#39;acqua per
+              riprodursi, a volte
+              percorrendo anche diversi chilometri. Durante questi spostamenti molti individui vengono uccisi dalle
+              automobili. Il
+              Rospo comune è protetto dalla Convenzione di Berna per la salvaguardia della fauna minore.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyOne" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyOne" aria-controls="collapseThirtyOne">
+              <img src="res/fotoAnimali/rondone_comune.jpg" class="img-fluid" alt="">
+              Rondone comune
+            </button>
+          </h2>
+          <div id="collapseThirtyOne" class="accordion-collapse collapse" aria-labelledby="headingThirtyOne"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/rondone_comune.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Apus apus Linnaeus, 1758</h6> 
+              <!-- Rondone -->
+
+              Il Rondone comune o eurasiatico è un piccolo uccello migratore dal piumaggio completamente nero, tranne la
+              gola
+              che è biancastra. Maschi e femmine si differenziano per piccolissimi particolari. Hanno la coda biforcuta
+              per cui
+              vengono spesso confusi con le rondini. Tra le caratteristiche principali è bene citare l’adattamento
+              evolutivo del
+              piede che permette all’uccello di aggrapparsi saldamente alle pareti verticali e alle sporgenze, oltre che
+              a
+              costituire
+              un importante strumento di attacco e difesa. Trascorre la maggior parte del suo tempo in aria dove si
+              alimenta, si
+              accoppia e dorme.
+              Il Rondone comune si nutre di aeroplancton, cioè di insetti aerei e di invertebrati non volatori dispersi
+              dal vento a
+              grandi altezze alcuni dei quali sono nocivi per l’agricoltura e l’uomo, come i nematoceri che comprendono,
+              tra gli
+              altri, la zanzara tigre.
+              Vive in città e paesi soprattutto con centri storici ricchi di cavità. Qui costruisce il nido con
+              materiale
+              raccolto in aria
+              e posto all’interno di cornicioni, coppi, buche pontaie, cassettoni delle persiane. Spesso formano coppie
+              stabili nel
+              tempo fino a quando uno dei due partner muore. Ogni anno la coppia puntualmente si ritrova, dopo aver
+              migrato e
+              svernato separatamente, sempre nello stesso luogo di riproduzione.
+              Non tutto si sa ancora sui Rondoni comuni. E’ infatti allo studio il modo in cui l’uccello si riposa in
+              volo. Alcune
+              ipotesi suppongono un sonno alternato dei due emisferi cerebrali oppure la presenza di una terza fase
+              durante la
+              quale i nidiacei tengono entrambi gli occhi aperti a metà.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyTwo" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyTwo" aria-controls="collapseThirtyTwo">
+              <img src="res/fotoAnimali/scoiattolo_rosso.jpg" class="img-fluid" alt="">
+              Scoiattolo rosso
+            </button>
+          </h2>
+          <div id="collapseThirtyTwo" class="accordion-collapse collapse" aria-labelledby="headingThirtyTwo"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/scoiattolo_rosso.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Sciurus vulgaris Linnaeus, 1758</h6> 
+              <!-- Scoiattolo -->
+
+              Lo Scoiattolo rosso è un roditore di media taglia, autoctono dell’Europa e dell’Italia. La sua pelliccia
+              mostra una
+              grande variabilità di colori dal rosso fulvo, al marrone-rossastro al nero; ma la parte inferiore del
+              corpo
+              è sempre
+              bianca. Ha una coda molto lunga che lo aiuta nell’equilibrio, a mantenere il calore durante il sonno, e ad
+              attirare le
+              femmine nel periodo riproduttivo. Vive prevalentemente sugli alberi. E’ specie onnivora: è ghiotto di semi
+              e
+              frutti di
+              conifere che rosicchia con i potenti incisivi, ma a seconda dell’habitat si nutre anche di semi e
+              frutti di
+              latifoglie, castagne e noci di cui fanno provvista durante la stagione estiva, immagazzinandoli in luoghi
+              sicuri. Non
+              disdegna anche i frutti freschi, funghi e tartufi, e persino di larve e adulti di insetti, nonché di uova
+              di
+              uccelli.
+              L&#39;animale rimane attivo anche durante la stagione invernale; solo in caso di consistenti e prolungate
+              nevicate si
+              rifugia nel proprio nido per più giorni consecutivi.
+              In Italia è in netto declino a causa dell&#39;introduzione di una specie alloctona, lo scoiattolo grigio
+              nordamericano
+              "Sciurus carolinensis" introdotta accidentalmente nel 1948, che si sta espandendo rapidamente con il
+              rischio
+              concreto di estinzione almeno in alcuni ben definiti areali. L’incompatibilità tra le due specie non è
+              dovuta
+              all’aggressività fisica del grigio verso il rosso, quanto piuttosto a quella che viene definita
+              tecnicamente
+              “esclusione
+              competitiva”: lo scoiattolo rosso e lo scoiattolo grigio sono entrambi arboricoli e diurni, consumano le
+              stesse risorse
+              alimentari e producono un numero simile di piccoli negli stessi periodi dell&#39;anno.
+              Per le sue capacità di disseminare e abbandonare semi e spore, lo Scoiattolo rosso svolge un importante
+              ruolo nella
+              tutela della biodiversità forestale, consentendo un adeguato ed efficace processo di rinnovamento
+              forestale.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyThree" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyThree" aria-controls="collapseThirtyThree">
+              <img src="res/fotoAnimali/taccola.jpg" class="img-fluid" alt="">
+              Taccola
+            </button>
+          </h2>
+          <div id="collapseThirtyThree" class="accordion-collapse collapse" aria-labelledby="headingThirtyThree"
+            data-bs-parent="#accordionExample">
+            <img src="res/fotoAnimali/taccola.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Coloeus monedula Linnaeus, 1758</h6> 
+              <!-- Taccola -->
+
+              La Taccola è un piccolo corvide dalle abitudini gregarie, con un piumaggio quasi interamente nero lucido.
+              E’
+              facile
+              osservarle spostarsi in gruppo alla ricerca di cibo. Nidifica sui monumenti. La specie normalmente vive in
+              ambienti
+              rupestri, nelle campagne alberate e la sua espansione nelle città italiane è da attribuire al fatto che
+              qui
+              trova
+              condizioni ideali: alta densità di colombi di cui preda i pulcini, ridotta pressione predatoria e ampia
+              disponibilità di
+              siti idonei alla nidificazione. La Taccola è monogama: le coppie rimangono insieme tutta la vita e
+              all’inizio della
+              stagione riproduttiva i partner, per rinsaldare la relazione, si nutrono e si ripuliscono il piumaggio a
+              vicenda.
+              Specie onnivora si alimenta oltre che di invertebrati che cattura per lo più sul terreno, di semi e
+              bacche,
+              resti di cibo
+              umano nelle città e non disdegna predare le uova e i nidiacei di altre specie.
+              E' protagonista del celeberrimo libro “L’anello di Re Salomone” dell’etologo austriaco Konrad Lorenz. Qui
+              l’autore
+              ne descrive dettagliatamente il comportamento sociale. A dare le mosse alle sue riflessioni era stata la
+              Taccola Cioc
+
+              che l’etologo aveva allevato fin dalla schiusa dell’uovo e che si era attaccata a lui come a un genitore
+              putativo.
+              Nacque da queste osservazioni, poi approfondite ed elaborate, la teoria dell’imprinting che lo ha reso
+              noto
+              anche a
+              un pubblico di non addetti ai lavori.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyFour" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyFour" aria-controls="collapseThirtyFour">
+              <img src="res/fotoAnimali/tartaruga.jpg" class="img-fluid" alt="">
+              Tartarughe
+            </button>
+          </h2>
+          <div id="collapseThirtyFour" class="accordion-collapse collapse" aria-labelledby="headingThirtyFour"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/tartaruga.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Testudines Linnaeus, 1758</h6>
+              <!-- Tartaruga -->
+
+              Con il termine comune di Tartarughe si comprendono le molteplici specie d&#39;acqua dolce e terrestri. Al
+              di
+              là della
+              definizione tassonomica, le tartarughe che si possono incontrare nelle nostre aree verdi e blu sono
+              generalmente di
+              piccole e medie dimensioni. Sono dotate di un guscio protettivo molto resistente: la parte superiore di
+              questa
+              &quot;corazza&quot; prende il nome di carapace, quella inferiore è detta piastrone. La distinzione tra i
+              sessi è definita dalle
+              dimensioni complessive dell’animale e dalla convessità del piastrone.
+              Le Tartarughe non hanno denti ma un becco che utilizzano per triturare in piccoli pezzi il cibo. Le specie
+              acquatiche
+              sono generalmente onnivore: carnivore da giovani (insetti, vermi, gamberetti, piccoli pesci),
+              prevalentemente
+              vegetariane da adulte. In acqua riescono a raggiungere gli 8km/h di velocità. Le terrestri sono più
+              erbivore
+              con una
+              dieta che varia dalla frutta (mele e fragole) alla lattuga, cavolo, funghi, radici e verdure. Sono molto
+              lente durante lo
+              spostamento.
+              Basse temperature e minore disponibilità di cibo inducono le Tartarughe ad andare in letargo. Tra ottobre
+              e
+              novembre e fino a marzo-aprile, sia quelle di acqua dolce che quelle terrestri diminuiscono la loro
+              attività
+              e vanno in
+              cerca di un luogo sicuro per affrontare l’inverno. Questo può essere rappresentato rispettivamente da un
+              riparo nei
+              pressi della riva senza sotterrarsi o nel fondo dello stagno, oppure una tana scavata nel terreno.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtyFive" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtyFive" aria-controls="collapseThirtyFive">
+              <img src="res/fotoAnimali/tortora_orientale.jpg" class="img-fluid" alt="">
+              Tortora orientale
+            </button>
+          </h2>
+          <div id="collapseThirtyFive" class="accordion-collapse collapse" aria-labelledby="headingThirtyFive"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/tortora_orientale.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Streptopelia decaocto Frivaldszky, 1838</h6>
+              <!-- Tortora orientale -->
+
+              La Tortora dal collare, originaria dell’Asia meridionale, si è adattata progressivamente a vivere a fianco
+              dell’uomo
+              nelle città di tutta Europa. In Italia vive principalmente in pianura e lungo le coste nelle aree urbane
+              con
+              parchi e
+              ricche alberature. Ha un bel piumaggio color caffellatte, leggermente più scuro sul dorso; le ali hanno
+              l’apice bruno
+              scuro e in volo la coda appare bianca a base nera. Sul collo spicca uno stretto collarino nero, che dà il
+              nome alla
+              specie.
+              Molto confidente si alimenta al suolo, spesso sulle mangiatoie, e si abbevera nelle fontanelle dei
+              giardini
+              e negli
+              abbeveratoi degli animali da cortile. La sua dieta è costituita per lo più da semi e piccoli frutti, ma in
+              alcuni periodi
+              dell’anno è integrata da insetti e altri piccoli invertebrati.
+              Nidifica in parchi, giardini e alberature dove costruisce un rozzo nido di rametti sugli alberi e talora
+              su
+              manufatti
+              come impalcature e tettoie. Al di fuori del periodo riproduttivo ha un comportamento gregario e si può
+              osservare
+              anche in stormi di centinaia di individui. Il suo monotono canto, facilmente riconoscibile, accompagna le
+              giornate
+              primaverili ed estive.
+              All&#39;inizio del XX secolo la Tortora dal collare era presente in Europa soltanto all&#39;estremo
+              sud-est
+              della Penisola
+              balcanica. Successivamente ha ampliato in modo spettacolare il suo areale di distribuzione colonizzando
+              tutto il
+              continente e raggiungendo in tappe successive la Scandinavia, le Isole britanniche e la Penisola Iberica.
+              In
+              Italia la
+              prima segnalazione è stata fatta nel 1947.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtySix" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThirtySix" aria-controls="collapseThirtySix">
+              <img src="res/fotoAnimali/vespa.jpg" class="img-fluid" alt="">
+              Vespa
+            </button>
+          </h2>
+          <div id="collapseThirtySix" class="accordion-collapse collapse" aria-labelledby="headingThirtySix"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/vespa.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Vespula vulgaris Linnaeus, 1758</h6> <!-- Vespa -->
+
+              Con il nome generico di Vespa si indicano solitamente insetti che vivono in colonie più o meno numerose,
+              con
+              regina (fertile), operaie e maschi. La Vespa più comune nei nostri climi è la Vespula vulgaris che
+              frequenta
+              i
+              giardini, i parchi e anche gli ambienti acquatici quando è in cerca di acqua. Il corpo presenta una
+              accentuata
+              divisione fra torace e addome. Quando è in volo emette un suono stridulo e acuto.
+              La maggior parte delle Vespe non sopravvive alle rigide temperature invernali e muore. Soltanto le giovani
+              regine
+              fecondate vanno in letargo perché “programmate” per resistere in luoghi riparati e attendere la primavera
+              successiva
+              per iniziare un nuovo ciclo.
+
+              La Vespa può pungere più volte in quanto la struttura del pungiglione, liscio e dritto, permette loro di
+              estrarlo senza
+              conseguenze mentre il soggetto punto avvertirà prurito e si formerà un ponfo. Una puntura di Vespa, in
+              generale,
+              non è pericolosa. Nella maggior parte dei casi causa dolore e arrossamento.
+              La Vespa è onnivora. Infatti si ciba di insetti ed è attratta dalla frutta
+              matura e da
+              bevande zuccherine e gassate, liquidi dolciastri, tanto da infilarsi spesso all’interno di bottiglie di
+              aranciata o vino.
+              Per procurarsi il cibo non esita ad attaccare e a spostarsi dal nido anche di parecchie centinaia di
+              metri,
+              fino a
+              superare il chilometro.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirtySeven" style="text-align: center;">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" id="lastAccordionItem"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirtySeven"
+              aria-controls="collapseThirtySeven">
+              <img src="res/fotoAnimali/volpe.jpg" class="img-fluid" alt="">
+              Volpe
+            </button>
+          </h2>
+          <div id="collapseThirtySeven" class="accordion-collapse collapse" aria-labelledby="headingThirtySeven"
+            data-bs-parent="#accordionExample">
+
+
+            <img src="res/fotoAnimali/volpe.jpg" class="img-fluid" alt="">
+
+            <div class="accordion-body accordion-glass text-dark">
+              <h6 class="sub card-subtitle mb-2 text-muted">Vulpes vulpes Linnaeus, 1758</h6> <!-- Volpe -->
+              La Volpe o Volpe rossa è un mammifero carnivoro che negli ultimi anni si è molto spesso avvicinato alle
+              periferie
+              cittadine per cercare cibo e allontanarsi dai cacciatori. Vive solitamente in coppia o in piccoli gruppi.
+              Il
+              mantello è di
+              colore bruno-rossastro; gli arti corti ma forti, tali da permettere all’animale di compiere balzi e scatti
+              necessari per
+              una buona caccia. Durante l’estate per effetto della muta da folto e luminoso, il mantello diventa chiaro
+              e
+              rado. E’
+              animale onnivoro e grande opportunista. Si ciba prevalentemente di piccoli roditori, ma caccia anche
+              conigli, uccelli
+              terricoli, rettili, invertebrati e giovani ungulati; non disdegna frutta e vegetali. È in grado di
+              cacciare
+              prede di diverse
+              dimensioni. Ha un udito molto sensibile che l’aiuta per procurarsi il cibo, mente grazie all’olfatto
+              riconosce gli
+              individui della propria colonia e il suo territorio.
+              E’ animale notturno, ma può essere attivo durante il mattino e il crepuscolo. Vive in tane scavate
+              sottoterra dove
+              partorisce, una volta l’anno, fino a otto cuccioli. Può vivere oltre dieci anni. Il suo punto debole è la
+              regolarità degli
+              spostamenti: percorre ripetutamente lo stesso percorso ed effettua gli stessi appostamenti tutte le sere a
+              orari molto
+              simili. Ma è ugualmente capace di adattarsi con successo ad ambienti diversi mutando il proprio
+              comportamento in
+              base al cambiamento delle condizioni ambientali.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="container col-lg-4 offset-lg-4 glass mt-4 mb-4 p-2 text-center" style="font-size: 10px;">Tutte le
+      immagini presenti in questa
+      web app sono state cedute a titolo gratuito dagli autori.
+    </div>
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+  <script src="translate.js"></script>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.accordion', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

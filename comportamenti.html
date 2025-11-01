@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Comportamenti</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div class="img-sfondo-comportamenti">
+    <img src="res/foglie/foglie_angolo.png" alt="foglieSfondo" class="foglie imgSfondoComportamenti" />
+  </div>
+
+
+  <main>
+    <div class="container mt-5">
+      <div class="card mb-4 glass col-lg-8 offset-lg-2">
+        <div class="card-header titoliPagine">
+          <h2>Comportamenti</h2>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <div class="text-center">
+                Conoscere la fauna selvatica che sempre più facilmente si avvicina ai centri urbani e che spesso
+                ritroviamo nelle
+                aree verdi e blu che frequentiamo, ci ha permesso di individuare una serie di comportamenti che possono
+                agevolare
+                una civile convivenza. Scopri con noi le prime “regole” da rispettare.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container col-lg-4 col-md-6 col-lg-offset-4  mx-auto mt-5"
+      style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+
+
+
+
+
+      <img src="res/comportamenti/1distanza.png" alt="" class="img-fluid but-img" onclick="openModal('modal1')">
+
+
+      <div id="modal1" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color: #6b8d63">
+            <div></div>
+            <div style="color:white;">Mantieni la giusta distanza</div>
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+          </div>
+
+
+          <p>Frequentare le aree verdi e blu cittadine ci permette sempre più spesso di incontrare grandi e piccoli
+            animali selvatici che qui trovano riparo e cibo. Può trattarsi di un uccello, di un’anatra o di un riccio.
+            <br>
+            Altre volte potremmo trovarci ad avvistare una volpe, un serpente o un istrice. Cosa fare in questi casi? Le
+            specie selvatiche sono caratterialmente schive e timorose nei riguardi dell’essere umano; se lo avvertono,
+            di solito si allontano sperando di non essere viste.
+            <br>
+            Qualunque sia la specie o le dimensioni se si avvistano è comunque bene evitate di avvicinarli perché non si
+            può conoscerne la reazione alla nostra presenza. La prima regola è, quindi, senza dubbio, dare molto spazio
+            all’animale.
+            <br>
+            L’animale selvatico possiede uno sviluppato senso di auto tutela che gli permette di percepire presenze
+            estranee alla propria specie anche da grande distanza ma può capitare di trovarselo vicino e questo potrebbe
+            spaventarlo innescando in lui un comportamento potenzialmente pericoloso. Non tanto per l’istinto aggressivo
+            quanto per un senso di timore e autodifesa.
+            <br>
+            E’ importante ricordare che gli animali selvatici non sono animali domestici: non sono addestrati a
+            interagire con gli esseri umani e non devono essere avvicinati o toccati. Al contrario, è importante
+            mantenere sempre una distanza di sicurezza.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <img src="res/comportamenti/2cibo.png" class="img-fluid but-img" alt="" onclick="openModal('modal2')">
+
+      <div id="modal2" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#7db072">
+            <div><span style="display: none;" class="close">&times;</span></div>
+            <div style="color:white;">NON DAR LORO DA MANGIARE</div>
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+          </div>
+
+
+          <p>Alimentare la fauna selvatica non è quasi mai una buona idea e uno dei motivi è proprio l’aumentato rischio
+            di incontri ravvicinati.
+            <br>
+            In genere gli animali selvatici sono dotati di un ottimo olfatto e hanno gusti alimentari decisamente
+            diversi dai nostri.
+            <br>
+            Anche se, mossi dalla fame, diventano molo abili a rintracciare il nostro cibo abbandonato.
+            <br>
+            Tieni presente che pane e biscotti possono nuocere alla sua salute. Se quindi ti trovi nelle condizioni di
+            dovergli dare da mangiare, informati correttamente sul tipo di alimentazione adeguato alla specie e chiedi
+            aiuto alle autorità preposte.
+            <br>
+            In generale, anche per evitare che l’animale si abitui e modifichi il suo comportamento naturale, si
+            suggerisce di non creare punti di alimentazione e non abbandonare avanzi di cibo.
+          </p>
+        </div>
+      </div>
+
+
+      <img src="res/comportamenti/3discrezione.png" class="img-fluid but-img" alt="" onclick="openModal('modal3')">
+
+      <div id="modal3" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#92ca9d">
+            <div></div>
+            <div style="color:white;">USA DISCREZIONE</div>
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+          </div>
+
+
+          <p>Se si avvista un animale selvatico, è importante rimanere in silenzio e osservarlo senza arrecare disturbo,
+            finché non si allontana.
+            <br>
+            Non seguirlo e rimanere fermi ad osservarlo, con discrezione, è una buona regola di rispetto.
+            <br>
+            Gli animali selvatici, infatti, se fotografati con il flash potrebbero spaventarsi e reagire in modo
+            inaspettato.
+            Sii dunque discreto quando documenti la sua presenza.
+            <br>
+            Se un animale non ha percepito la nostra presenza e quindi non è scappato dal luogo in cui ci troviamo,
+            evitiamo di avvicinarci ulteriormente per fare foto o per accarezzarlo.
+          </p>
+        </div>
+      </div>
+
+      <img src="res/comportamenti/4ambiente.png" class="img-fluid but-img" alt="" onclick="openModal('modal4')">
+
+      <div id="modal4" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#86c0a5">
+            <div></div>
+            <div style="color:white;">LASCIALO NEL SUO AMBIENTE</div>
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+          </div>
+
+
+          <p>Quando durante le nostre passeggiate ci imbattiamo in cuccioli o tane o nidi di animali selvatici, spesso
+            siamo portati ad avvicinarci per curiosità o per istinto di protezione.
+            <br>
+            Dobbiamo invece comprendere che le madri sono sicuramente vicine perché allontanate solo in cerca di cibo e
+            non faranno ritorno al nido o al cucciolo finché noi umani non ci siamo allontanati.
+            <br>
+            Inoltre la nostra presenza potrebbe anche innescare l’istinto protettivo e nel tentativo di difendere la
+            prole le madri possono attaccarci.
+            <br>
+            Quando incontri un cucciolo, quindi, non portarlo a casa con te. I suoi genitori potrebbero trovarsi nelle
+            vicinanze.
+            <br>
+            È invece consigliabile allontanarsi lentamente e magari da una giusta distanza osservarli senza
+            interferire nel rapporto genitore/cucciolo.
+            <br>
+            Non accarezzate mai animali giovani apparentemente abbandonati, non prendeteli tra le braccia e non
+            spostateli.
+            <br>
+            Se i cuccioli odorano di esseri umani i genitori li abbandoneranno.
+            <br>
+            Questo comportamento è dannoso anche per le uova di uccello: finché l’uomo è vicino alle uova, l’uccello non
+            si avvicina, le uova
+            si raffreddano e i pulcini muoiono nel guscio.<br>
+            Mai ridurre in cattività un animale selvatico per tenerlo “da compagnia”.
+          </p>
+        </div>
+      </div>
+
+
+      <img src="res/comportamenti/5domestici.png" class="img-fluid but-img" alt="" onclick="openModal('modal5')">
+
+
+      <div id="modal5" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#84c1bd">
+            <div></div>
+            <div style="color:white;">TIENI LONTANI GLI ANIMALI DOMESTICI</div>
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+          </div>
+
+
+          <p>Può capitare durante la frequentazione di un’area verde o blu cittadina, che anche i nostri animali
+            domestici incontrino gli animali selvatici.
+            <br>
+            In questo caso dobbiamo fare attenzione che il contatto, per
+            gioco, per difesa, per istinto, non metta a serio pericolo l’uno o l’altro.
+            <br>
+            C’è il rischio anche di uno scambio di patogeni che potrebbe creare serie problematiche sia agli animali che
+            all’uomo. O potrebbe
+            determinare una reazione aggressiva e causare nuovi pericoli.
+            <br>
+            Gli animali selvatici non vengono periodicamente controllati dai veterinari, per cui anche la vicinanza con
+            cani, gatti o comunque i nostri pets, può costituire una situazione di rischio.
+          </p>
+        </div>
+      </div>
+
+
+      <img src="res/comportamenti/6ferito.png" class="img-fluid but-img" alt="" onclick="openModal('modal6')">
+
+      <div id="modal6" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#93c7ed">
+            <div></div>
+            <div style="color:white;">SE È FERITO FAI ATTENZIONE</div>
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+          </div>
+
+
+          <p>Gli animali selvatici non sono giocattoli, non hanno necessità di coccole e l'eccessiva cura da parte
+            nostra può essere dannosa.
+            <br>
+            Ma può capitare di imbattersi in un animale ferito. Questo può renderlo
+            potenzialmente più pericoloso: può mordere, artigliare o beccare.
+            <br>
+            Se l’animale mostra delle lesioni cutanee crostose fai attenzione, potrebbe trattarsi di rogna.
+            <br>
+            Prima di intervenire è quindi meglio osservare la situazione da una certa distanza e interpellare subito le
+            autorità preposte.
+            <br>
+            Non somministrare mai alcun tipo di farmaco di propria iniziativa.
+            <br>
+            Per un animale selvatico, una coccola piò essere interpretata come un’aggressione: quindi non toccarli.
+            <br>
+            Lo scopo di ogni intervento è garantire il loro benessere e restituirli alla vita libera non appena
+            possibile.
+            <br>
+            Affidati alle professionalità competenti che conoscono le cure specifiche coerenti con la loro biologia.
+            Quindi anche se noti un cucciolo in pericolo evita di toccarlo ma avvisa gli enti preposti.
+          </p>
+        </div>
+      </div>
+
+
+      <img src="res/comportamenti/7chiama.png" class="img-fluid but-img" alt="" onclick="openModal('modal7')">
+
+      <div id="modal7" class="modal">
+        <div class="m-content container col-lg-6 col-md-8 col-10 mt-5 mx-auto p-4 glass">
+
+
+          <div class="comp-header" style="background-color:#7e9ed2">
+            <div></div>
+            <div style="color:white;">CHIAMA GLI ENTI PREPOSTI</div>
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+          </div>
+
+
+          <p>
+            Se l’animale ti sembra in difficoltà chiama gli enti preposti: Wild Umbria di Perugia, i Carabinieri della
+            Biodiversità di Orvieto, la LIPU di Castiglione del Lago, l’USL1 di Perugia.
+            <br>
+            Nonostante tutte le precauzioni può capitare purtroppo di investire un animale selvatico, trovare un animale
+            morto, incontrare un animale ferito o ammalato.
+            <br>
+            Soccorrere un animale selvatico in difficoltà può sembrare un gesto di generosità e rispetto, ma un
+            intervento errato può pregiudicarne la salute e la possibilità di vivere libero.
+            <br>
+            Quindi per garantirgli le migliori possibilità di essere recuperato appieno alla vita libera non
+            raccoglierlo, maneggiarlo o
+            ospitarlo: chiama subito le autorità preposte illustrando loro, dettagliatamente, dove si trova, quali sono
+            le sue condizioni apparenti, in quale occasione è stato fatto l’avvistamento.
+            <br>
+            <br>
+            <br>
+            Va ricordato che la detenzione della fauna selvatica è vietata dalla legge 157/92 e che entro 24h l'animale
+            va consegnato ad un ente autorizzato e competente per il soccorso dell'animale.
+            <br>
+            <br>
+            <br>
+            Wild Umbria Pietralunga (PG) - 3703199068
+            <br>
+            Carabinieri della Biodiversità Strada Regionale 317 Marscianese, km6.4 – Orvieto (TR) – 075812285
+            <br>
+            LIPU Aeroporto Eleuteri - Castiglione del Lago (PG) – 3383560692
+            <br>
+            USL1 Distretti Regionali di igiene e Sanità Pubblica USL1 – 800636363
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.but-img', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+</body>
+
+
+
+
+
+</html>

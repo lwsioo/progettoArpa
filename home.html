@@ -1,0 +1,441 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Home</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="img-sfondo-home">
+    <img src="res/foglie/foglie_vert1.png" alt="foglieSfondo" class="foglie imgSfondoHome" />
+  </div>
+  <header>
+    <nav id="navbar" style="background-color: #fff" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff">
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid" width="70px" alt="logo" />
+          </a>
+        </div>
+
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container" style="border-right: 4rem !important;">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png" /></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png" /></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png" /></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png" /></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pb-5">
+    <div class="container col-xxl-8 px-4 py-5 container-hero">
+      <div class="home-glass row flex-lg-row-reverse align-items-center g-5 py-5" style="margin-top: 20px !important;">
+        <div class="col-10 col-sm-8 col-lg-6" style="margin: 0 !important;">
+          <img src="res/logoSito1.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="500" height="300"
+            loading="lazy" style="border-radius: 16px;" />
+        </div>
+        <div class="col-lg-6" style="margin: 0 !important;">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-dark">
+            Fauna selvatica in città: se la conosci la rispetti
+          </h1>
+          <p class="lead text-dark">
+            Progetto di Arpa Umbria e Fondazione Perugia per parlare di Tutela della Biodiversità e Fauna Selvatica e
+            promuovere la diffusione di buone pratiche per una consapevole cittadinanza attiva
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4 text-dark">Progetto</h1>
+          <p class="lead fs-5 text-center text-dark">
+            Il progetto, attraverso la partecipazione e nuovi processi educativi, promuove la coesistenza responsabile
+            con la Fauna Selvatica presente nelle città. Le più alte temperature nelle aree urbane nel periodo
+            invernale, la disponibilità di rifugi, la luminosità notturna, la mancanza di predatori, la facile
+            reperibilità di cibo hanno indotto molti animali selvatici a spostare la loro residenza in città
+            determinando la necessità di individuare idonei codici comportamentali. Scopri perché è importante conoscere
+            e rispettare gli animali selvatici che puoi incontrare nelle aree verdi e blu della tua città.
+          </p>
+          <div class="text-left mt-4">
+            <div class="text-center">
+              <a href="progetto.html"><button class="more btn btn-success w-3">
+                  Scopri di più
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4">Luoghi</h1>
+          <p class="lead text-center fs-5">
+            Le infrastrutture verdi e blu sono aree naturali e seminaturali nel territorio comunale essenziali per il
+            benessere ambientale, sociale e culturale della comunità. Le aree verdi includono parchi urbani, giardini,
+            aree boschive e orti, mentre le aree blu comprendono fiumi, laghi, fontane e zone umide. Questi spazi
+            migliorano il microclima urbano, riducono l'inquinamento, promuovono la biodiversità e favoriscono stili di
+            vita salutari. Inoltre, offrono benefici economici come la riduzione dei costi di disinquinamento e la
+            riqualificazione estetica dei luoghi.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center align-items-center g-4 mt-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6" style="max-width: 350px">
+          <div class="card home-glass">
+            <img class="card-img-top" style="border-radius: 12px;" src="res/imgHome/areaVerde.jpg" alt="Title" />
+            <div class="card-body">
+              <div class="text-center g-1">
+                <h4 class="card-title mb-4">Aree Verdi</h4>
+                <a href="areaVerde.html"><button class="more btn btn-success w-3">
+                    Scopri di più
+                  </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6" style="max-width: 350px">
+          <div class="card home-glass">
+            <img class="card-img-top" style="border-radius: 12px;" src="res/imgHome/areaBlu.jpg" alt="Title" />
+            <div class="card-body">
+              <div class="text-center">
+                <h4 class="card-title mb-4">Aree Blu</h4>
+                <a href="areaBlu.html"><button class="more btn btn-success w-3">
+                    Scopri di più
+                  </button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4 text-dark">Comportamenti</h1>
+          <p class="lead fs-5 text-center text-dark">
+            Conoscere la fauna selvatica che sempre più facilmente si avvicina ai centri urbani e che spesso ritroviamo
+            nelle aree verdi e blu che frequentiamo, ci ha permesso di individuare una serie di comportamenti che
+            possono agevolare una civile convivenza. Accade spesso che quando gli animali diventano più confidenti,
+            l’uomo non resiste alla tentazione di avvicinarli, toccarli, nutrirli. Il nostro progetto vuole educare a
+            migliorare questo rapporto e far intendere che per proteggerli e rispettarli è corretto adottare idonei
+            codici di comportamento.
+          </p>
+          <div class="text-left mt-4">
+            <div class="text-center">
+              <a href="comportamenti.html"><button class="more btn btn-success w-3">Scopri di più</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4 text-dark">Animali Selvatici</h1>
+          <p class="lead fs-5 text-center text-dark">
+            La lista degli animali selvatici che vivono nelle aree urbanizzate è sicuramente molto lunga e può dipendere
+            da diversi fattori quali la localizzazione; la presenza di specie vegetali; la quantità, enstensione e
+            qualità delle acque; la gestione e cura dei diversi ambienti; la frequentazione e l’utilizzo finale
+            dell’area. Di seguito una prima lista di mammiferi e uccelli che è possibile incontrare nelle aree verdi e
+            blu oggetto del progetto.
+          </p>
+          <div class="text-left mt-4">
+            <div class="text-center">
+              <a href="animali.html"><button class="more btn btn-success w-3">Scopri di più</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4 text-dark">I Nostri Elaborati Finali</h1>
+          <p class="lead fs-5 text-center text-dark">
+            Le esperienze sviluppate nel corso del progetto si sono concretizzate in diversi prodotti di comunicazione
+            messi a disposizione di tutta la cittadinanza. Gli studenti, nel rispetto del principio di inclusione e
+            condivisione alla base delle attività svolte, hanno elaborato le infografiche installate nelle aree verdi e
+            blu dei comuni partner, le brochure turistiche in doppia lingua (italiano e inglese), le fioriere realizzate
+            con materiale di riciclo, il fumetto per ipovedenti e non vedenti e la web app plurilingue. Gli elaborati
+            sono stati sostenuti per gli aspetti tecnici dal corpo insegnante degli Istituti Scolastici coinvolti e per
+            la parte argomentativa dal gruppo tecnico-scientifico a supporto delle diverse attività di progetto.
+          </p>
+          <div class="text-left mt-4">
+            <div class="text-center">
+              <a href="prodotti.html"><button class="more btn btn-success w-3">Scopri di più</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <hr class="hr" />
+    <div class="container section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 home-glass">
+          <h1 class="titoliHome text-center mb-4 text-dark">Eventi</h1>
+          <p class="lead fs-5 text-center text-dark">
+            L’interesse sviluppato intorno al progetto "Fauna selvatica in città: se la conosci la rispetti" ha portato nel corso del tempo a creare situazioni di incontro e confronto con i cittadini, le istituzioni e gli enti di ricerca. Di seguito le esperienze più significative che hanno coinvolto i partner di progetto e ARPA Umbria nel sostenere l’informazione scientifica e la necessità di condividerla a tutti i livelli.
+          </p>
+          <div class="text-left mt-4">
+            <div class="text-center">
+              <a href="eventi.html"><button class="more btn btn-success w-3">Scopri di più</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <div class="container footer-images home-glass">
+
+      <h2 class="titoliHome text-center mb-4 text-dark">Con il sostegno di:</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="img-fluid " alt="logoArpa" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.fondazioneperugia.it">
+            <img src="res/loghi/logoFondazionePerugia.png" class="img-fluid " alt="logoFondazionePerugia" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.uslumbria1.it">
+            <img src="res/loghi/logoUslUmbria1.png" class="img-fluid " alt="logoUslUmbria1" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.comune.assisi.pg.it">
+            <img src="res/loghi/logoCittaAssisi.png" class="img-fluid " alt="logoCittaAssisi" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.comune.perugia.it">
+            <img src="res/loghi/logoComunePerugia.png" class="img-fluid " alt="logoComunePerugia" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://rgpbio.it">
+            <img src="res/loghi/logoCarabinieri.png" class="img-fluid " alt="logoCarabinieri" />
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://medvet.unipg.it/ricerca-e-terza-missione/terza-missione">
+            <img src="res/loghi/logoUniPg.png" class="img-fluid " alt="logoUniPg" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.avoltapg.edu.it">
+            <img src="res/loghi/logoVolta.png" class="img-fluid " alt="logoVolta" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://icciechiassisi.edu.it">
+            <img src="res/loghi/logoIstitutoCiechi.png" class="img-fluid " alt="logoIstitutoCiechi" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.lipu.it">
+            <img src="res/loghi/logoLipu.png" class="img-fluid " alt="logoLipu" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.uiciechi.it/umbria/perugia">
+            <img src="res/loghi/logoUnioneCiechi.png" class="img-fluid " alt="logoUnioneCiechi" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.fondoambiente.it">
+            <img src="res/loghi/logoFAI.png" class="img-fluid " alt="logoFAI" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.grafox.it">
+            <img src="res/loghi/logoGrafox.png" class="img-fluid " alt="logoGrafox" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.instagram.com/sualzo">
+            <img src="res/loghi/logoSuarez.png" class="img-fluid " alt="logoSualzo" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.riccardocapecchi.it">
+            <img src="res/loghi/logoStudioFotografico.png" class="img-fluid " alt="logoStudioFotografico" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.fsbusitalia.it">
+            <img src="res/loghi/logoBusitalia.png" class="img-fluid " alt="logoBusitalia" />
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 logo">
+          <a href="https://www.cittadelladomenica.it">
+            <img src="res/loghi/logoCittaDellaDomenica.png" class="img-fluid " alt="logoCittaDellaDomenica" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+  <script src="translate.js"></script>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <!-- <script>
+    function updateClasses() {
+      if (window.innerWidth < 576) {
+        let containers = document.getElementsByClassName("container section");
+        document.getElementsByClassName("footer-images")[0].classList.add("glass");
+        document.getElementsByClassName("container col-xxl-8")[0].classList.add("glass");
+        for (let i = 0; i < containers.length; i++) {
+          containers[i].classList.add("glass");
+        }
+      } else {
+        let containers = document.getElementsByClassName("container section");
+        document.getElementsByClassName("footer-images")[0].classList.remove("glass");
+        document.getElementsByClassName("container col-xxl-8")[0].classList.remove("glass");
+        for (let i = 0; i < containers.length; i++) {
+          containers[i].classList.remove("glass");
+        }
+      }
+    }
+
+    window.addEventListener("resize", updateClasses);
+    window.addEventListener("load", updateClasses);
+
+  </script> -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.home-glass', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+</body>
+
+</html>

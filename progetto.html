@@ -1,0 +1,1038 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Progetto</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li>
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div class="img-sfondo-progetto">
+    <img src="res/foglie/foglie_angolo_sx.png" alt="foglieSfondo" class="foglie imgSfondoProgetto" />
+  </div>
+
+  <main class="pb-5">
+
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+      <div class="card mb-4 glass">
+        <div class="card-header titoliPagine">
+          <div class="h2">Il Progetto</div>
+        </div>
+        <div class="card-body">
+          <div class="content-ex" id="content-ex">
+            <p>Il progetto “Fauna selvatica in città: se la conosci la rispetti” è stato realizzato da Arpa Umbria con
+              il sostegno della Fondazione Perugia e la collaborazione di numerosi enti, istituzioni e associazioni
+              locali che mettendo a disposizione le proprie competenze hanno lavorato insieme per migliorare le
+              conoscenze e promuovere buone pratiche per una consapevole cittadinanza attiva. Nel percorso sono stati
+              attivamente coinvolti gli allievi dell’ITT Statale A.Volta di Perugia e dell’Istituto Comprensivo per
+              Ciechi di Assisi.</p>
+            <p>Il progetto mette al centro la sostenibilità ambientale come paradigma culturale attraverso cui spiegare
+              perché è importante conoscere e rispettare gli animali selvatici che nei nostri ambienti urbani hanno
+              trovato rifugio, ospitalità, alimentazione. Le risorse naturali in ambiente urbano (le aree verdi e blu)
+              rispondono all’esigenza dei cittadini di poter usufruire di luoghi che contribuiscono al miglioramento
+              della qualità di vita sociale, culturale, ambientale. Giardini pubblici, parchi, verde attrezzato, specchi
+              d’acqua e tratti urbani di fiumi assolvono all’importante ruolo di mitigazione del clima e di tutela
+              ambientale. La presenza di alberi e spazi verdi, laghetti cittadini e fontane, aiutano, infatti, a
+              combattere l’inquinamento atmosferico e acustico, mitigano l’impatto delle acque piovane e delle isole di
+              calore, ma sono anche habitat ideali per gli animali urbanizzati: animali selvatici indigeni o alloctoni
+              che si sono ormai stabiliti nelle nostre città e approfittano delle risorse umane per la loro
+              sopravvivenza.</p>
+            <p>Ma la convivenza con gli animali selvatici richiede l'adozione di comportamenti adeguati per evitare
+              situazioni pericolose o dannose. È quindi importante per i cittadini di oggi e di domani, comprenderne il
+              valore e rispettarne la presenza.
+
+              Obiettivo principale: attraverso questo progetto, che ha lavorato sulla comunicazione inclusiva, le
+              generazioni presenti hanno trasmesso alle nuove generazioni le conoscenze per migliorare la consapevolezza
+              sui rischi associati a errati comportamenti e hanno fornito le giuste indicazioni per comprendere
+              l’importanza della tutela degli animali selvatici anche in conformità a quanto stabilito dagli artt.9 e 41
+              della Costituzione Italiana.
+
+              <br>
+              Le Attività del Progetto: <br>
+              - Attività di sensibilizzazione in materia ambientale e miglioramento delle competenze
+              Gli studenti sono andati alla scoperta del territorio, delle problematiche e delle relative soluzioni
+              incontrando sul tema della fauna selvatica le migliori professionalità e competenze in ARPA Umbria, presso
+              i Carabinieri della Biodiversità, della LIPU Umbria, nell’Università degli Studi di Perugia – Medicina
+              Veterinaria, dell’USL1 - Ufficio Randagismo e Igiene urbana. A tal fine sono stati organizzati viaggi
+              d'istruzione che hanno permesso a tutti gli studenti coinvolti nel progetto di partecipare a incontri
+              specializzanti nei “luoghi del sapere”
+              Sono stati coinvolti esperti in materia di wildlife (sanità animale e umana, etologia, ecologia e
+              biologia, normativa, biodiversità e cambiamenti climatici). Docenti di riconosciuta competenza hanno
+              aiutato gli studenti ad approfondire la conoscenza della fauna selvatica autoctona e alloctona presente
+              nelle città, e comprendere gli impatti della loro presenza nella vita di ogni cittadino; quanto e come il
+              cambiamento climatico incide sulla loro presenza e quali i comportamenti idonei da adottare per una
+              convivenza civile e salubre.
+              E’ stato realizzato un Corso di Fumetto frequentato da tutti gli studenti partecipanti al progetto. Il
+              corso ha permesso di acquisire nuovi strumenti di lettura e di rappresentazione del pensiero creativo.
+              Svolto presso l'ITT Statale A.Volta ha fornito le competenze necessarie anche per migliorare la qualità
+              dei prodotti finali.
+              E’ stato prodotto un reportage fotografico ed un video del progetto. Tutti gli incontri e le attività
+              svolte sono state documentate con un “racconto per immagini” che ha permesso di testimoniare la memoria
+              del cambiamento.
+              <br>
+              - Azioni di relazioni e comunicazione
+              Gli studenti sono stati condotti a nuove forme di inclusione ed aiutati a prendere coscienza dei propri
+              limiti e delle capacità di condivisione. Le attività extrascolastiche e scolastiche sono state
+              partecipate, sostenute e indirizzate dall’intero corpo insegnate.
+              I comuni partner di progetto hanno collaborato attivamente indirizzando ed operando verso le necessità del
+              territorio.
+              Il progetto altamente partecipativo ha coinvolto tutti i partner nelle varie fasi organizzative, di
+              pianificazione e di realizzazione del materiale documentale (infografiche e brochure), tecnico-artistico
+              (creazione di un fumetto), fotografico (reportage), multimediale (video, webapp, TAG NFC), creativo
+              (costruzioni con materiali di recupero).
+              Tra le azioni condivise la concertazione dei prodotti finali con entrambi i sistemi di scrittura (lineare
+              nero e Braille) utilizzabili dai vedenti, ipovedenti e non vedenti o con l’utilizzo della comunicazione in
+              prossimità, anche chiamata near-field communication (NFC), una tecnologia di ricetrasmissione che fornisce
+              connettività senza fili (RF) bidirezionale a corto raggio. Tutto ciò per dare alle persone non vedenti o
+              ipovedenti un modo di ascoltare, in modo indipendente, la spiegazione delle attività di progetto con
+              l’ausilio del proprio smartphone.
+              <br>
+              - Prodotti finali
+              Realizzazione di infografiche con NFC per ipovedenti e non vedenti, installate nelle aree verdi/blu
+              individuate dai comuni partner di progetto
+              Creazione, impaginazione e stampa di un fumetto fruibile da vedenti, ipovedenti e non vedenti in scrittura
+              lineare nero e scrittura Braille
+              Realizzazione di fioriere realizzate con materiali di recupero, resistenti alle intemperie, installate in
+              giardini selezionati dalle amministrazioni comunali
+              Creazione di una webapp per raccontare in italiano, inglese, spagnolo, tedesco il progetto distribuito sui
+              canali degli enti partner
+              Produzione di brochure informative in doppia lingua, rese disponibili alla cittadinanza anche a fini
+              turistici
+              Messa a disposizione dei prodotti finali del progetto all’intera cittadinanza.
+            </p>
+          </div>
+          <span class="read-more" id="readMore" onclick="expand()">Continua a leggere</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="carouselIdSeven" class="carousel slide mt-5 col-lg-8 offset-lg-2 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselIdSeven" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="res/progetto/fotoFumetto/f8.jpg" class="w-100 d-block" alt="Slide 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="res/progetto/fotoLIPU/l1.jpg" class="w-100 d-block" alt="Slide 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="res/progetto/fotoCCBiodiversita/c6.jpg" class="w-100 d-block" alt="Slide 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="res/progetto/fotoArpa/a2.jpg" class="w-100 d-block" alt="Slide 4">
+          </div>
+          <div class="carousel-item">
+            <img src="res/progetto/fotoUniversita/u0.jpg" class="w-100 d-block" alt="Slide 5">
+          </div>
+          <div class="carousel-item">
+            <img src="res/progetto/fotoUSL1/us5.jpg" class="w-100 d-block" alt="Slide 6">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdSeven" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIdSeven" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <hr class="hr">
+
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+      <div class="card mb-4 glass">
+        <div class="card-header titoliPagine">
+          <div class="h2">Le nostre esperienze</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <p class="text-center text-dark">
+                Nell’ambito del progetto gli studenti dell’Istituto Tecnico
+                Tecnologico Statale A.Volta di Perugia e dell’Istituto Comprensivo per ciechi di Assisi, hanno avuto
+                modo
+                di svolgere attività formative ed informative a scuola ma anche fuori dall’ambiente scolastico. Sono
+                stati
+                forniti diversi strumenti utili e nuovi alla conoscenza del territorio e delle professionalità che
+                lavorano e si impegnano ogni giorno per la tutela dell’ambiente e della biodiversità, per la salute e
+                la
+                vigilanza degli animali selvatici, per la protezione della salute umana e degli animali domestici.
+                Hanno
+                avuto inoltre occasione di conoscere i “luoghi del sapere” sviluppando nuove esperienze presso i
+                parchi,
+                i
+                centri di recupero degli animali selvatici, il canile municipale, gli uffici dell’Agenzia Regionale
+                per
+                la
+                Protezione Ambientale. Per imparare ad elaborare pensieri ed immagini è stato anche possibile seguire,
+                per
+                tutti i ragazzi coinvolti nel progetto, indipendentemente dalle proprie abilità tecniche, un corso di
+                fumetto che ha dato loro occasione di esprimere con matite e colori o utilizzando le nuove tecnologie,
+                le
+                proprie capacità narrative ed imparare ad osservare con nuovi occhi il mondo circostante.
+                Fondamentale il perseguimento dell’inclusione sociale attraverso la collaborazione e la frequentazione
+                con
+                gli studenti con pluridisabilità motorie, visive e psicologiche. Il progetto ha garantito la
+                partecipazione di tutti gli alunni nel processo formativo di apprendimento dando la possibilità di
+                contribuire alla realizzazione dei prodotti finali che sono stati resi disponibili all’intera
+                cittadinanza.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+
+      <div class="accordion" id="accordionExample" style="border-radius: 16px !important;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed text-center text-dark accordion-glass" id="firstAccordionItem"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+              Ottobre 2023 - Gennaio 2024: Corso di fumetto
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Il CORSO DI FUMETTO è stato tenuto dall’illustratore Antonio Vincenti, in arte Sualzo, disegnatore,
+              autore di libri a fumetti per ragazzi, sceneggiatore, esperto graphic novel, tra le migliori
+              professionalità del nostro territorio. L’obiettivo del corso era acquisire nuove tecniche di
+              comunicazione e narrazione e analizzarne le interconnessioni con le nuove tecnologie digitali, tutti
+              linguaggi che sono stati utilizzati dagli studenti per rispondere agli obiettivi di progetto
+            </div>
+
+
+
+            <div id="carouselIdOne" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselIdOne" data-bs-slide-to="14"
+                  aria-label="Slide 15"></button>
+              </div>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoFumetto/f0.jpg" class="w-100 d-block" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f1.jpg" class="w-100 d-block" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f2.jpg" class="w-100 d-block" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f3.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoFumetto/f14.jpg" class="w-100 d-block" alt="Slide 15">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdOne" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdOne" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+        <div class="accordion-item ">
+          <h2 class="accordion-header " id="headingTwo">
+            <button class="accordion-button collapsed accordion-glass text-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+              13 ottobre 2023: Gli studenti incontrano i volontari della LIPU a Castiglione del lago
+            </button>
+          </h2>
+
+
+
+
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Gli studenti hanno fatto visita al centro LIPU di Castiglione del Lago. Con l’aiuto di Edna Palmerini,
+              responsabile del Centro Umbria, e il suo staff, sono stati affrontati i temi della cura e della
+              riabilitazione della fauna selvatica, del rispetto degli animali e di come alimentarli. Osservando,
+              ascoltando e toccando i giovani hanno imparato a riconoscere alcuni uccelli e a studiare la loro
+              biodiversità legata alla forma, al colore, ai suoni.
+            </div>
+            <div id="carouselIdTwo" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselIdTwo" data-bs-slide-to="14"
+                  aria-label="Slide 15"></button>
+              </div>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoLIPU/l0.jpg" class="w-100 d-block" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l1.jpg" class="w-100 d-block" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l2.jpg" class="w-100 d-block" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l3.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoLIPU/l14.jpg" class="w-100 d-block" alt="Slide 15">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdTwo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdTwo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed text-dark accordion-glass" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-controls="collapseThree">
+              8 Novembre 2023: Visita al CREASE di Formichella con i Carabinieri della Biodiversità di Assisi
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Gli studenti sono stati ospitati dal Centro di Recupero degli Animali Selvatici ed esotici (CRASE) di
+              Formichella Orvieto (TR). I Carabinieri della Biodiversità di Assisi capitanati dal ten.col. Marco
+              Fratoni, sostenitori del progetto, hanno illustrato le attività svolte presso il centro e fornito loro
+              strumenti utili ad una consapevole cittadinanza attiva. L’incontro ha permesso di osservare e
+              conoscere le numerose specie di animali selvatici e di rapaci accudite dal personale dell’arma
+              all’interno di uno splendido patrimonio boschivo di rilevanza naturale (Riserva Mondiale della
+              Biosfera - MAB), e affrontare i temi della cura, della tutela ambientale e dell’etologia.
+            </div>
+
+
+
+            <div id="carouselIdThree" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdThree" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoCCBiodiversita/c0.jpg" class="w-100 d-block" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c14.jpg" class="w-100 d-block" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c2.jpg" class="w-100 d-block" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c3.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoCCBiodiversita/c13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdThree"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdThree"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed text-dark accordion-glass" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-controls="collapseFour">
+              27 Novembre 2023: L’Arpa Umbria accoglie gli studenti e i partner di progetto per parlare di
+              biodiversità, sostenibilità ambientale e di rispetto verso gli animali selvatici
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Partecipazione attiva e vivace, informativa e accessibile a tutti per l’evento organizzato da Arpa
+              Umbria nell’ambito del progetto coordinato dall’Agenzia e sostenuto dalla Fondazione Perugia. Alla
+              presenza del direttore generale Ing.Luca Proietti e coordinati dalla referente del progetto dott.ssa
+              Rosalba Padula, tante le presenze anche on line, per questa occasione di condivisione delle attività e
+              degli obiettivi. Uno spazio aperto in cui tutti i partner, le scuole, gli studenti, hanno avuto
+              occasione di confrontarsi sui temi della biodiversità, del rispetto e della conoscenza. Un momento
+              utile per acquisire nuovi spunti di lavoro, rafforzare le competenze apprese, attivare relazioni e
+              motivare gli apprendimenti.
+            </div>
+
+
+            <div id="carouselIdFour" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselIdFour" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+              </div>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoArpa/a0.jpg" class="w-100 d-block" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a1.jpg" class="w-100 d-block" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a2.jpg" class="w-100 d-block" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a3.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoArpa/a14.jpg" class="w-100 d-block" alt="Slide 15">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdFour" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdFour" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed accordion-glass text-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-controls="collapseFive">
+              16 Gennaio 2024: I medici veterinari dell’Università degli Studi di Perugia incontrano gli studenti
+              partecipanti al progetto alla Città della Domenica
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Ulteriore appuntamento quello degli studenti, ospitati da Alessandro Guidi presso il Parco della Città
+              della Domenica, con l’Università di Perugia-Dipartimento di Veterinaria. Qui i ragazzi hanno appreso
+              numerose nozioni sul rapporto uomo-animale che passa per la tutela della biodiversità animale, il
+              rispetto dei luoghi e delle specie selvatiche, i problemi sanitari e non ultimo gli approcci
+              etologici. L’esperienza, resa possibile grazie alla disponibilità del prof.Fabrizio Rueca e delle
+              eccellenti competenze del suo team work ha coinvolto i ragazzi prima in un incontro tecnico quindi
+              nella visita del parco.
+            </div>
+
+
+
+            <div id="carouselIdFive" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselIdFive" data-bs-slide-to="14"
+                  aria-label="Slide 15"></button>
+              </div>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoUniversita/u0.jpg" class="w-100 d-block" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u1.jpg" class="w-100 d-block" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u2.jpg" class="w-100 d-block" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u3.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUniversita/u14.jpg" class="w-100 d-block" alt="Slide 15">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdFive" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdFive" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed accordion-glass text-dark" id="lastAccordionItem" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-controls="collapseSix">
+              26 Gennaio 2024: Presso il rifugio dell’ENPA a Collestrada, gli studenti incontrano il Servizio di
+              Veterinaria dell’USL1 di Perugia
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body accordion-glass text-dark">
+              Le attività di formazione mirate ad affrontare i temi del randagismo e dei possibili approcci nei
+              confronti della fauna sinantropica e selvatica in città si sono svolte presso la sede del Canile
+              Municipale di Perugia - sezione Rifugio ENPA grazie alla guida della dott.ssa Brigitta Favi
+              (Responsabile U.O.S. Randagismo e Igiene Urbana USL1 Perugia) e della professoressa Paola Tintori
+              (Responsabile ENPA). E’ stato così possibile prendere confidenza con le reali problematiche dovute
+              alla gestione e al benessere degli animali da compagnia e degli animali selvatici in contesto urbano e
+              agricolo, e le regole di una giusta convivenza.
+            </div>
+
+            <div id="carouselIdSix" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselIdSix" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+              </div>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="res/progetto/fotoUSL1/us0.jpg" class="w-100 d-block" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us1.jpg" class="w-100 d-block" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us2.jpg" class="w-100 d-block" alt="Slide 3" />
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us14.jpg" class="w-100 d-block" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us4.jpg" class="w-100 d-block" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us5.jpg" class="w-100 d-block" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us6.jpg" class="w-100 d-block" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us7.jpg" class="w-100 d-block" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us8.jpg" class="w-100 d-block" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us9.jpg" class="w-100 d-block" alt="Slide 10">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us10.jpg" class="w-100 d-block" alt="Slide 11">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us11.jpg" class="w-100 d-block" alt="Slide 12">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us12.jpg" class="w-100 d-block" alt="Slide 13">
+                </div>
+                <div class="carousel-item">
+                  <img src="res/progetto/fotoUSL1/us13.jpg" class="w-100 d-block" alt="Slide 14">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdSix" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIdSix" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.accordion', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('#carouselIdSeven', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

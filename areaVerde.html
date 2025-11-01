@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetto Arpa | Aree Verdi</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <header id="header">
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prodotti.html">Elaborati</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-5">
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          <div class="h2">Aree Verdi</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <div class="text-center">
+                <p>Le aree verdi sono spazi pubblici urbani e periurbani caratterizzati dalla presenza di vegetazione
+                  come i parchi, i giardini, i prati o i boschi. Forniscono molteplici benefici ambientali e sociali.
+                  Nell’ambito del progetto il Comune di Assisi e il Comune di Perugia hanno individuato specifiche aree
+                  di interesse, particolarmente frequentate dai cittadini, in cui avviare attività di sensibilizzazione
+                  e offrire informazioni giuste ed adeguate per migliorare il nostro rapporto con gli animali selvatici
+                  urbanizzati.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+
+      <h3 class="text-left mt-5 mb-4 text-dark glass" style="width: fit-content;">Comune di Perugia:</h3>
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          <div>Il Percorso Verde a Pian di Massiano</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Il parco, inaugurato nel 1975, deve il suo nome originario alla zona di Pian di Massiano dove sorge.
+                Questo ampio spazio, che occupa un’area di circa 70 ettari, ospita una pluralità di servizi tipici delle
+                aree verdi che coniugano socialità, fitness, sport e svago. E’ quasi totalmente pianeggiante, tranne
+                alcuni brevi tratti con pendenze varie. L’inserimento delle strutture ed infrastrutture è stato
+                preceduto da un’attenta progettazione che ha voluto letteralmente immergerle nel verde. Il risultato è
+                un grande parco urbano attrezzato con attenzione alla qualità dell’ambiente ed al benessere del
+                fruitore: “barriere verdi” contro smog e rumore, aree di parcheggio ombreggiate ed attrezzate, percorsi
+                pedonali dedicati allo sport o al recupero da patologie respiratorie. Anche la semplice passeggiata o la
+                corsa lungo il torrente Genna, di cui si sono recuperate la vegetazione ripariale e l’alveo con tecniche
+                di bioingegneria, possono rappresentare un momento di relax, di socializzazione o di svago. Le
+                possibilità di fare sport sono poi praticamente infinite: i campi da calcio, da rugby, da baseball e da
+                bocce, la pista di pattinaggio e da mountain bike, le aree attrezzate per i giochi dei più piccoli, e
+                quelle per i cani in libertà.</p>
+              <img src="res/pannelli/pianDiMassianoVerde.png" id="pianDiMassianoVerde" class="imgResizing img-fluid"
+                 alt="Pian di Massiano" usemap="#map1">
+              <map name="map1" id="#map1" class="map1">
+                <area shape="circle" coords="300,180,80" href="animali.html?item=Thirteen">
+                <area shape="circle" coords="650,150,80" href="animali.html?item=ThirtyTwo">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7342.572946002209!2d12.353844!3d43.109638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ea1c4ba0668cb%3A0x7b1dc54e902df17b!2sPercorso%20Verde%20Leonardo%20Cenci!5e1!3m2!1sit!2sit!4v1718266315147!5m2!1sit!2sit"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          <div>Il Bosco Didattico di Ponte Felcino</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>E’ un’area naturalistico-ambientale di circa 4 ettari di proprietà comunale. La sua nascita, avvenuta
+                nella seconda metà degli anni 90, si deve alla volontà del territorio di scopo di promuovere concetti
+                naturalistici ed ecologici in generale e in particolare legati a piante e foreste e la conoscenza e la
+                valorizzazione dell’ambiente vegetale. Sono presenti oltre 1.000 specie botaniche arboree, arbustive ed
+                erbacee, una serra dedicata alle piante succulente (piante grasse), una agli agrumi, una grande serra a
+                cupola con piante tropicali e un'altra con piante degli ambienti subtropicali, un roseto, un bosco
+                planiziale e un bosco ripariale. Il Bosco Didattico quindi può essere letto da molteplici punti di
+                vista: studio sulle caratteristiche delle piante, studio sulle utilità delle piante nelle varie attività
+                umane (alimentazione e industria) e sulla loro funzione insostituibile nella vita del pianeta e nel
+                ciclo della vita, studio delle tecniche colturali, studio di ogni essenza vegetale nelle sue
+                caratteristiche ornamentali e decorative da impiegare nei giardini, nel verde attrezzato, nelle opere
+                pubbliche e di come la vegetazione possa inserirsi nel contesto urbano, nei boschi, ecc. Legato
+                intimamente al Bosco Didattico è il canale di adduzione di acqua da Villa Pitignano alla ex-Centrale
+                idroelettrica di Ponte Felcino. Le sponde sono state opportunamente riambientate con vegetazione
+                ripariale e il ripopolamento del canale è stato completato dall’immissione di pesci e di animali
+                acquatici che oggi animano il suo corso. Il Bosco didattico sarà oggetto di intervento in numerosi
+                settori di esso a valere sui fondi PNRR, tra cui la realizzazione di una nuova serra subtropicale
+                riprendendo la struttura di protezione utilizzata per il restauro della Fontana Maggiore di Piazza 4
+                Novembre; il rifacimento totale della serra subtropicale esistente e la realizzazione di una nuova area
+                dedicata agli animali garantendo la convivenza e le necessità di ognuno di essi.</p>
+              <img src="res/pannelli/ponteFelcinoVerde.png" id="ponteFelcinoVerde" class=" imgResizing img-fluid"
+                alt="Ponte Felcino" usemap="#map2">
+              <map name="map2" id="#map2" class="map2">
+                <area shape="circle" coords="265,170,80" href="animali.html?item=FourtyThree">
+                <area shape="circle" coords="630,250,80" href="animali.html?item=Thirteen">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7339.562969765735!2d12.445478!3d43.134723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132c20247e9ff4ed%3A0xefa424a90f27effb!2sBosco%20didattico%20Ponte%20Felcino!5e1!3m2!1sit!2sit!4v1718268941482!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-left mt-5 mb-4 text-dark glass" style="width: fit-content;">Comune di Assisi:</h3>
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          Parco del Pincio
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Conosciuto anche come Parco Regina Margherita è accessibile tutti i giorni dalle 7 alle 19.
+                Riqualificato e
+                messo in sicurezza nel 2022, lo si trova nella parte alta della città, nel centro storico, vicino al
+                famoso
+                Convitto di Assisi. Parco antichissimo, posto su due livelli presenta all’ingresso, vicino ai 2 leoni
+                con lo
+                stemma della città di Assisi, l’anfiteatro all’aperto, mentre, salendo nella parte superiore attraverso
+                viali di
+                sassi immersi nel bosco, si giunge al piccolo lago.
+              </p>
+              <img src="res/pannelli/reginaMargheritaVerde.png" id="reginaMargheritaVerde"
+                class="imgResizing img-fluid mx-auto"alt="Regina Margherita"
+                usemap="#map4">
+              <map name="map4" id="#map4" class="map4">
+                <area shape="circle" coords="250,180,80" href="animali.html?item=Fifteen">
+                <area shape="circle" coords="660,200,80" href="animali.html?item=Two">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7347.5122055263555!2d12.619897!3d43.06844900000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9d80028f7b15%3A0xb965ef1e20e8021d!2sParco%20Regina%20Margherita!5e1!3m2!1sit!2sit!4v1718269121020!5m2!1sit!2sit"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="myModal" class="modal-panel">
+        <span class="close-panel" onclick="closeImg()">&times;</span>
+        <img class="modal-content-panel" id="img01">
+      </div>
+
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          Bosco di San Francesco (Bene FAI)
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Ai piedi della Basilica di San Francesco c’è un antico bosco dove natura, storia e spiritualità si
+                fondono in un
+                percorso alla scoperta di una Assisi inedita. 64 ettari di natura, tra terreni boschivi e campi
+                coltivati, pareti
+                di pietra rosa, radure e oliveti. Nell’area verde si possono trovare cascatelle e ovviamente un fitto
+                bosco,
+                con tavoli da pic-nic e percorsi per facili passeggiate. Un luogo di armonia e di silenzio capace di
+                rievocare il
+                messaggio di San Francesco che ha ispirato l’artista Michelangelo Pistoletto nella creazione di un’opera
+                di
+                Land Art: il Terzo Paradiso, simbolo di riconciliazione fra uomo e natura. <br>
+                Il Bosco di San Francesco è una porzione intatta di paesaggio umbro strappato all’abbandono e al degrado
+                dal FAI – Fondo per l’Ambiente Italiano che, dopo la donazione da parte di Intesa Sanpaolo nel 2008,
+                l’ha
+                interamente restaurato, recuperato e riaperto al pubblico nel 2011. Un paesaggio storico-ambientale
+                tradizionale fortemente identitario e ricco di biodiversità, che il FAI ha recuperato, conservato e
+                valorizzato,
+                dove ha grande importanza la presenza degli oliveti oggi rimessi in produzione.</p>
+              <img src="res/pannelli/sanFrancescoVerde.png" id="sanFrancescoVerde" class="imgResizing img-fluid"
+                alt="Bosco di San Francesco" usemap="#map5">
+              <map name="map5" id="#map5" class="map5">
+                <area shape="circle" coords="245,195,80" href="animali.html?item=Eight">
+                <area shape="circle" coords="500,460,80" href="animali.html?item=Nineteen">
+                <area shape="circle" coords="225,560,80" href="animali.html?item=TwentySix">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.035682460033!2d12.615833!3d43.080914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9d4c884699ff%3A0x3d6fb3d077519b95!2sBosco%20di%20San%20Francesco!5e1!3m2!1sit!2sit!4v1718269230322!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          Parco della Rocca Minore
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Molto vicina geograficamente alla Rocca Maggiore (un solo chilometro di distanza), un tempo anche
+                collegate tra loro da una lunga muraglia percorribile sotto la quale si narra dell’esistenza di un
+                percorso segreto, la Rocca Minore è conosciuta anche con il nome di Rocchicciola o di Cassero di
+                Sant’Antonio. Da questo luogo partono diversi percorsi trekking per il Subasio. Sull’area, riconosciuta
+                dall’Unesco come patrimonio dell’umanità, il Comune ha avviato progetti di rivalutazione turistica,
+                culturale ed ambientale.</p>
+              <img src="res/pannelli/roccaMinoreVerde.png" id="roc" class="imgResizing img-fluid"
+                alt="Parco della Rocca Minore" usemap="#map6">
+              <map name="map6" id="#map6" class="map6">
+                <area shape="circle" coords="300,180,80" href="animali.html?item=Eleven">
+                <area shape="circle" coords="660,150,80" href="animali.html?item=Twelve">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1836.8045988236627!2d12.6228!3d43.0709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e82cabe945169%3A0xde40ee8530c29f38!2sRocca%20Minore!5e1!3m2!1sit!2sit!4v1718269265251!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          Parco della Basilica di Santa Maria degli Angeli
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>L’area verde prospiciente la Basilica di S. Maria degli Angeli costituisce un importante polmone verde
+                della città. La Piazza della Porziuncola, principale via di accesso alla chiesa particolarmente
+                frequentata dai pellegrini, è percorsa da diversi filari alberati costituiti soprattutto da lecci dove
+                si rifugiano diverse specie di avifauna antropofila. È in questo luogo che si racconta nei Fioretti di
+                San Francesco come il santo si fece donare da un giovane che andava al mercato per venderle, alcune
+                tortore e le liberò. Gli uccelli si fermarono con lui, nidificando nei dintorni della chiesetta della
+                Porziuncola e la tradizione vuole che le tortore che si vedono in questa area siano le discendenti di
+                quegli uccelli liberati da Francesco.</p>
+              <img src="res/pannelli/santaMariaVerde.png" id="sma" 
+                class="imgResizing img-fluid mx-auto" alt="Basilica Santa Maria degli Angeli" usemap="#map7">
+              <map name="map7" id="#map7" class="map7">
+                <area shape="circle" coords="300,180,80" href="animali.html?item=ThirtyFive">
+                <area shape="circle" coords="660,150,80" href="animali.html?item=TwentyFour">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7348.748674348981!2d12.5798!3d43.058133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9daac6f9932b%3A0x67ecd30f3dfb4f9f!2sBasilica%20di%20Santa%20Maria%20degli%20Angeli!5e1!3m2!1sit!2sit!4v1718269331351!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card mb-4 home-glass">
+        <div class="card-header zone-verdi">
+          Parco della Basilica di San Francesco Assisi
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <p>Le estese pareti in pietra della Basilica di San Francesco, posta al limite occidentale della città di
+                Assisi, rappresentano l’habitat antropico a cui si sono adattate le specie di avifauna, che solitamente
+                in natura nidificano sulle pareti rocciose. Le alte mura, costruite con la classica pietra rosata del
+                Monte Subasio, pur nella loro artificialità, richiamano nell’essenza del loro materiale costruttivo
+                l’ambiente circostante. Inoltre la collocazione della Basilica su di uno sperone del terreno, la slancia
+                nell’ambiente aereo, rendendo tale struttura particolarmente interessante come sito di nidificazione.
+              </p>
+              <img src="res/pannelli/basilicaSanFrancescoVerde.png" id="basilicaSanFrancescoVerde"
+             class="imgResizing img-fluid mx-auto" alt="Basilica San Francesco"
+                usemap="#map8">
+              <map name="map8" id="#map8" class="map8">
+                <area shape="circle" coords="250,200,80" href="animali.html?item=ThirtyThree">
+                <area shape="circle" coords="660,200,80" href="animali.html?item=Five">
+              </map>
+            </div>
+            <div class="col-md-4">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7346.730360094178!2d12.6054!3d43.074971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9d4740b4c3e5%3A0x47de324eddc737d8!2sBasilica%20di%20San%20Francesco%20d%27Assisi!5e1!3m2!1sit!2sit!4v1718269374421!5m2!1sit!2sit"
+                  class="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+
+
+
+  <script>
+    function getImgs() {
+      const imgs = document.getElementsByClassName('imgResizing');
+
+      for (let i = 0; i < imgs.length; i++) {
+        calcCords(imgs[i], i);
+      }
+    }
+
+    function calcCords(img, i) {
+      let imgResized = img.width / img.naturalWidth;
+
+
+      let mapId = img.useMap;
+
+      let map = document.getElementById(mapId);
+
+      let areas = map.getElementsByTagName('area');
+
+      for (let j = 0; j < areas.length; j++) {
+        let coords = areas[j].getAttribute("coords");
+
+        coords = coords.split(",");
+        coords[0] = Math.round(coords[0] * imgResized);
+        coords[1] = Math.round(coords[1] * imgResized);
+        coords[2] = Math.round(coords[2] * imgResized);
+
+        areas[j].setAttribute("coords", coords[0] + "," + coords[1] + "," + coords[2]);
+      }
+
+
+
+    }
+    window.onload = getImgs();
+  </script>
+</body>
+
+</html>

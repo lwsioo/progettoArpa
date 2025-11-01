@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetto Arpa | Elaborati</title>
+  <link rel="icon" href="res/logoSito.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="user-select: none; overflow: hidden; pointer-events: none !important;">
+  <!-- Copyright - 2024 Nawsome -->
+  <div id="modal-loader" class="modal loader modal-loader" style="display: flex;">
+    <div>
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+          <div class="hamster__body">
+            <div class="hamster__head">
+              <div class="hamster__ear"></div>
+              <div class="hamster__eye"></div>
+              <div class="hamster__nose"></div>
+            </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
+          </div>
+        </div>
+        <div class="spoke"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselModal" class="modal-panel">
+    <span class="close-panel" onclick="closeCarousel()">&times;</span>
+    <div class="fumettoContainer">
+      <div id="carouselIdFumetto1" class="carouselFumetto carousel slide mt-3" data-bs-ride="carousel" data-interval="false">
+        <div class="carousel-inner fumetto-inner" role="listbox">
+          <div class="carousel-item active fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto01.png" class="w-100 d-block" alt="First slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto02.png" class="w-100 d-block" alt="Second slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto03.png" class="w-100 d-block" alt="Third slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto04.png" class="w-100 d-block" alt="Fourth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto05.png" class="w-100 d-block" alt="Fifth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto06.png" class="w-100 d-block" alt="Sixth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto07.png" class="w-100 d-block" alt="Seventh slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto08.png" class="w-100 d-block" alt="Eighth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto09.png" class="w-100 d-block" alt="Ninth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto10.png" class="w-100 d-block" alt="Tenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto11.png" class="w-100 d-block" alt="Eleventh slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto12.png" class="w-100 d-block" alt="Twelfth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto13.png" class="w-100 d-block" alt="Thirteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto14.png" class="w-100 d-block" alt="Fourteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto15.png" class="w-100 d-block" alt="Fifteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto16.png" class="w-100 d-block" alt="Sixteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto17.png" class="w-100 d-block" alt="Seventeenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto18.png" class="w-100 d-block" alt="Eighteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto19.png" class="w-100 d-block" alt="Nineteenth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto20.png" class="w-100 d-block" alt="Twentieth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto21.png" class="w-100 d-block" alt="Twenty-first slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto22.png" class="w-100 d-block" alt="Twenty-second slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto23.png" class="w-100 d-block" alt="Twenty-third slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto24.png" class="w-100 d-block" alt="Twenty-fourth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto25.png" class="w-100 d-block" alt="Twenty-fifth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto26.png" class="w-100 d-block" alt="Twenty-sixth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto27.png" class="w-100 d-block" alt="Twenty-seventh slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto28.png" class="w-100 d-block" alt="Twenty-eighth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto29.png" class="w-100 d-block" alt="Twenty-ninth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto30.png" class="w-100 d-block" alt="Thirtieth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto31.png" class="w-100 d-block" alt="Thirty-first slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto32.png" class="w-100 d-block" alt="Thirty-second slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto33.png" class="w-100 d-block" alt="Thirty-third slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto34.png" class="w-100 d-block" alt="Thirty-fourth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto35.png" class="w-100 d-block" alt="Thirty-fifth slide" />
+          </div>
+          <div class="carousel-item fumetto-item">
+            <img src="res/prodotti/fumetto/fumetto36.png" class="w-100 d-block" alt="Thirty-sixth slide" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdFumetto1"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIdFumetto1"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav id="navbar" style="background-color: #fff;" class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container d-flex justify-content-between" style="background-color: #fff;">
+
+        <div>
+          <a class="navbar-brand" href="https://www.arpa.umbria.it">
+            <img src="res/loghi/logoArpa.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+          <a class="navbar-brand" href="home.html">
+            <img src="res/logoSito.png" class="imgLogo img-fluid rounded-top" width="70px" alt="logo" />
+          </a>
+        </div>
+
+        <button class="navbar-toggler d-xl-none d-lg-block" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html">Progetto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-current="page">Luoghi<span
+                  class="visually-hidden">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="areaVerde.html">Aree Verdi</a>
+                <a class="dropdown-item" href="areaBlu.html">Aree Blu</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comportamenti.html">Comportamenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="animali.html">Animali Selvatici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="prodotti.html">Elaborati</a>
+            </li>
+            <li>
+              <a class="nav-link" href="eventi.html">Eventi</a>
+            </li>
+          </ul>
+          <div class="flags-container">
+            <div id="google_translate_element"></div>
+            <div class="menu-traslate-header">
+              <a onclick="italian()"><img width="20" src="res/italy-flag.png"></a>
+              <a href="#googtrans/en" class="a-trad"><img width="20" src="res/english-flag.png"></a>
+              <a href="#googtrans/fr" class="a-trad"><img width="20" src="res/france-flag.png"></a>
+              <a href="#googtrans/es" class="a-trad"><img width="20" src="res/spanish-flag.png"></a>
+              <a href="#googtrans/de" class="a-trad"><img width="20" src="res/germany-flag.png"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="img-sfondo-progetto">
+    <img src="res/foglie/foglie_angolo_sx.png" alt="foglieSfondo" class="foglie imgSfondoProgetto" />
+  </div>
+  <div class="img-sfondo-home">
+    <img src="res/foglie/foglie_vert2.png" alt="foglieSfondo" class="foglie imgSfondoHome" />
+  </div>
+
+  <main class="pb-5">
+
+    <div class="container mt-5 col-lg-8">
+      <div class="card mb-4 glass">
+        <div class="card-header titoliPagine">
+          <div class="h2">Elaborati Finali</div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div>
+              <div class="text-center">
+                Con il progetto "Fauna selvatica in città: se la conosci la rispetti" sono stati realizzati numerosi
+                prodotti di comunicazione condivisi poi con la cittadinanza. Gli studenti, nel rispetto del principio
+                di
+                inclusione e condivisione alla base delle attività svolte, hanno elaborato le infografiche installate
+                nelle
+                aree verdi e blu dei comuni partner, le brochure turistiche in doppia lingua, le fioriere realizzate
+                con
+                materiale di riciclo, il fumetto per ipovedenti e non vedenti e la web app plurilingua. Gli elaborati
+                sono
+                stati sostenuti per gli aspetti tecnici dal corpo instgnante degli Istituti Scolastici coinvolti e per
+                la
+                parte argomentativa dal gruppo tecnico-scientifico a supporto delle diverse attività di progetto.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container col-lg-8 offset-lg-2 mt-5">
+      <div class="accordion" id="accordionExample2" style="border-radius: 16px !important;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" id="firstAccordionItem"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+              Brochure dei Comportamenti
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              Condividere con la cittadinanza le informazioni acquisite nel corso del progetto è stato il naturale
+              sviluppo delle numerose attività e dei vari incontri realizzati durante l’anno. Per informare i
+              cittadini sui comportamenti da tenere quando si incontra un animale selvatico in ambiente urbano
+              o suburbano, lo strumento di comunicazione più efficace è stato ritenuto essere una semplice e
+              piacevole brochure scritta in italiano e in inglese.
+              Qui sono state illustrate sette semplici regole comportamentali che possono aiutare i cittadini a
+              comprendere, anche in modo intuitivo, cosa fare e cosa non fare.
+              <div id="carouselIdBrochure" class="carousel slide mt-3" data-bs-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselIdBrochure" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                  <li data-bs-target="#carouselIdBrochure" data-bs-slide-to="1" aria-label="Second slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="res/prodotti/brochure1.png" class="w-100 d-block" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/brochure2.png" class="w-100 d-block" alt="Second slide" />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdBrochure"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIdBrochure"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="download mt-3">
+                <button type="button" class="download-button" onclick="download('res/prodotti/brochure.pdf')">
+                  <span class="download-button__text">Download</span>
+                  <span class="download-button__icon">
+                    <svg class="download-svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                      <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                      <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed accordion-glass text-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+              Fumetto
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              Questo fumetto è stato realizzato dagli alunni dell’ITTS A.Volta di Perugia coinvolti nel progetto
+              con l’intento di utilizzare la tecnica del racconto illustrato per descrivere in modo piacevole,
+              semplice e inclusivo i più idonei codici comportamentali all’approccio con la fauna selvatica
+              presente nelle nostre città. Il lavoro è frutto di un lungo percorso didattico che ha visto in una
+              prima fase l’incontro degli studenti con le istituzioni e le associazioni che a vario titolo si occupano
+              della fauna selvatica (ARPA Umbria, LIPU, Università degli Studi di Perugia, USL1), quindi lo studio
+              della fumettistica come moderno linguaggio di comunicazione.
+              <br>
+              Rilevante la cura con cui è stato costruito un prodotto finale che ha voluto trovare nel fumetto
+              l’occasione di condividere con le disabilità visive, messaggi e cultura. Il fumetto, infatti, è stato
+              realizzato rispettando le condizioni editoriali minime per gli ipovedenti e riscritto in Braille, con
+              immagini a rilievo. Si ritiene che in questo modo il messaggio comunicativo potrà avere una più
+              importante condivisione.
+
+
+              <div class="img-container mx-auto">
+                <img src="res/prodotti/fumetto/fumetto01.png" class="copertinaFumetto img-fluid but-img " alt="copertinaFumetto"/>
+                <div class="overlay" onclick="fullScreen()">
+                  <div class="overlay-text">&#xe5d0; Apri a schermo intero</div>
+              </div>
+              </div>
+              <div id="carouselIdFumetto" class="carouselFumetto carousel slide mt-3" data-bs-ride="carousel" data-interval="false" style="display: none;">
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="res/prodotti/fumetto/fumetto01.png" class="w-100 d-block" alt="First slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto02.png" class="w-100 d-block" alt="Second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto03.png" class="w-100 d-block" alt="Third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto04.png" class="w-100 d-block" alt="Fourth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto05.png" class="w-100 d-block" alt="Fifth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto06.png" class="w-100 d-block" alt="Sixth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto07.png" class="w-100 d-block" alt="Seventh slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto08.png" class="w-100 d-block" alt="Eighth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto09.png" class="w-100 d-block" alt="Ninth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto10.png" class="w-100 d-block" alt="Tenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto11.png" class="w-100 d-block" alt="Eleventh slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto12.png" class="w-100 d-block" alt="Twelfth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto13.png" class="w-100 d-block" alt="Thirteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto14.png" class="w-100 d-block" alt="Fourteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto15.png" class="w-100 d-block" alt="Fifteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto16.png" class="w-100 d-block" alt="Sixteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto17.png" class="w-100 d-block" alt="Seventeenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto18.png" class="w-100 d-block" alt="Eighteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto19.png" class="w-100 d-block" alt="Nineteenth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto20.png" class="w-100 d-block" alt="Twentieth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto21.png" class="w-100 d-block" alt="Twenty-first slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto22.png" class="w-100 d-block" alt="Twenty-second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto23.png" class="w-100 d-block" alt="Twenty-third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto24.png" class="w-100 d-block" alt="Twenty-fourth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto25.png" class="w-100 d-block" alt="Twenty-fifth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto26.png" class="w-100 d-block" alt="Twenty-sixth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto27.png" class="w-100 d-block" alt="Twenty-seventh slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto28.png" class="w-100 d-block" alt="Twenty-eighth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto29.png" class="w-100 d-block" alt="Twenty-ninth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto30.png" class="w-100 d-block" alt="Thirtieth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto31.png" class="w-100 d-block" alt="Thirty-first slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto32.png" class="w-100 d-block" alt="Thirty-second slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto33.png" class="w-100 d-block" alt="Thirty-third slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto34.png" class="w-100 d-block" alt="Thirty-fourth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto35.png" class="w-100 d-block" alt="Thirty-fifth slide" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="res/prodotti/fumetto/fumetto36.png" class="w-100 d-block" alt="Thirty-sixth slide" />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIdFumetto"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIdFumetto"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="download mt-3">
+                <button type="button" class="download-button" onclick="download('res/prodotti/fumetto/fumetto.pdf')">
+                  <span class="download-button__text">Download</span>
+                  <span class="download-button__icon">
+                    <svg class="download-svg" data-name="Layer 2" id="bdd05811-e15d-428c-bb53-8661459f9307" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                      <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                      <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed text-center accordion-glass text-dark" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-controls="collapseThree">
+              Fioriera
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample2">
+            <div class="accordion-body accordion-glass text-dark">
+              Nell’ambito del progetto “Fauna selvatica in città: se la conosci la rispetti” gli studenti dell’Istituto
+              Comprensivo per Ciechi di Assisi hanno realizzato una fioriera a forma di “ranocchia” con materiali di
+              recupero avviando così un importante processo di cittadinanza attiva e di inclusione sociale. Insieme alle
+              insegnanti, i bambini e i ragazzi che hanno partecipato al progetto, hanno affrontato il tema del rispetto
+              degli animali selvatici che possono essere facilmente incontrati nelle aree verdi e blu cittadine e lo
+              hanno
+              reso concreto utilizzando i principi dell’Economia Circolare.
+              Le fioriere sono state realizzate con vecchi pneumatici dipinti con vernici atossiche ed ecologiche.
+              L’assemblaggio è stato effettuato presso il Parco Pian di Massiano di Perugia grazie al supporto
+              dell’Ufficio “Gestione del Verde pubblico” del Comune di Perugia e ad Assisi in collaborazione con
+              l’Ufficio
+              “Parco e Ambiente” del Comune.
+
+              <video class="mt-3" width="100%" controls>
+                <source src="res/prodotti/video_fioriera.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour" style="text-align: center;">
+          <button class="accordion-button collapsed text-center accordion-glass text-dark" id="lastAccordionItem" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour">
+            Video Progetto
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample2">
+          <div class="accordion-body accordion-glass text-dark">
+            Un progetto così complesso e articolato non poteva trascurare il racconto per immagini. Questo si
+è sviluppato attraverso gli scatti fotografici realizzati in tutti i momenti di condivisione delle
+attività, ma anche con un breve video che vuole testimoniare la memoria del cambiamento.
+
+            <video class="mt-3" width="100%" controls>
+                <source src="res/prodotti/faunaselvaticacitta.mp4" type="video/mp4">
+              </video>
+          </div>
+        </div>
+      </div> 
+      </div>
+    </div>
+
+
+
+    <button onclick="scrollToTop()" id="scrollBtn" class="scrollBtn rounded-pill">↑</button>
+  </main>
+  <footer class="footer-case">
+    <img src="res/footer.png" alt="">
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="translate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    type="text/javascript"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.card', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      ScrollReveal().reveal('.accordion', { delay: 100, duration: 700, easing: 'ease-in-out' });
+    });
+  </script>
+
+  <script>
+
+    jQuery(document).ready(function ($) {
+      $(".a-trad").click(function (event) {
+        var ref = $(this).attr("href");
+        window.location = $(this).attr("href");
+        document.cookie = "googtrans=it/" + ref.split("/")[1];
+        location.reload();
+      });
+    });
+  </script>
+</body>
+
+</html>
